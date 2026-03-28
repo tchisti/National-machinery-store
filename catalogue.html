@@ -1,0 +1,2013 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>National Machinery Stores — Product Catalogue 2025–2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <style>
+    /* ===========================
+       DESIGN TOKENS
+    =========================== */
+    :root {
+      --navy:  #0d1f3c;
+      --amber: #f59e0b;
+      --steel: #1e3a5f;
+      --muted: #5a6a80;
+      --white: #ffffff;
+      --light: #f4f6fa;
+      --border: #dde3ef;
+      --green: #16a34a;
+      --green-light: #dcfce7;
+      --amber-light: #fef3c7;
+      --navy-light: #e8edf5;
+    }
+
+    /* ===========================
+       GLOBAL RESET & BASE
+    =========================== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: #e8eaed;
+      color: #1a1a2e;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Barlow Condensed', sans-serif;
+    }
+
+    /* ===========================
+       PAGE LAYOUT
+    =========================== */
+    .page {
+      width: 210mm;
+      min-height: 297mm;
+      background: #ffffff;
+      margin: 0 auto 24px auto;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+    }
+
+    /* ===========================
+       PRINT BUTTON
+    =========================== */
+    .no-print {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 9999;
+      background: var(--amber);
+      color: var(--navy);
+      border: none;
+      padding: 12px 22px;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      border-radius: 6px;
+      cursor: pointer;
+      box-shadow: 0 4px 16px rgba(245,158,11,0.4);
+      transition: background 0.2s, transform 0.1s;
+    }
+    .no-print:hover { background: #d97706; transform: translateY(-1px); }
+
+    /* ===========================
+       SHARED HEADER (pages 2–14)
+    =========================== */
+    .page-header {
+      background: var(--navy);
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-shrink: 0;
+    }
+    .page-header .hdr-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .nm-box {
+      background: var(--amber);
+      color: var(--navy);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 900;
+      font-size: 18px;
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 4px;
+      flex-shrink: 0;
+    }
+    .nm-box-sm {
+      width: 30px;
+      height: 30px;
+      font-size: 14px;
+    }
+    .hdr-company {
+      display: flex;
+      flex-direction: column;
+    }
+    .hdr-company .name {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      color: var(--white);
+      letter-spacing: 1px;
+      line-height: 1.1;
+    }
+    .hdr-company .sub {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 9px;
+      color: var(--amber);
+      letter-spacing: 0.8px;
+      margin-top: 1px;
+    }
+    .page-header .hdr-right {
+      text-align: right;
+    }
+    .hdr-right .phone {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--white);
+      letter-spacing: 0.5px;
+    }
+    .hdr-right .web {
+      font-size: 9px;
+      color: var(--amber);
+      letter-spacing: 0.5px;
+    }
+
+    /* ===========================
+       SHARED FOOTER (pages 2–14)
+    =========================== */
+    .page-footer {
+      margin-top: auto;
+      background: var(--light);
+      border-top: 2px solid var(--amber);
+      padding: 6px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-shrink: 0;
+    }
+    .page-footer .ft-text {
+      font-size: 8px;
+      color: var(--muted);
+      letter-spacing: 0.3px;
+    }
+    .page-footer .ft-page {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--navy);
+    }
+
+    /* ===========================
+       PAGE CONTENT WRAPPER
+    =========================== */
+    .page-body {
+      padding: 18px 22px 14px 22px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ===========================
+       PRODUCT PAGE ELEMENTS
+    =========================== */
+    .product-number-label {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 10px;
+      font-weight: 700;
+      color: var(--amber);
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 2px;
+    }
+    .product-watermark {
+      position: absolute;
+      top: 52px;
+      right: 18px;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 110px;
+      font-weight: 900;
+      color: rgba(13,31,60,0.05);
+      line-height: 1;
+      pointer-events: none;
+      user-select: none;
+    }
+    .product-title {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 32px;
+      font-weight: 800;
+      color: var(--navy);
+      letter-spacing: 0.5px;
+      line-height: 1.05;
+      margin-bottom: 4px;
+    }
+    .product-tagline {
+      font-size: 11px;
+      color: var(--muted);
+      margin-bottom: 8px;
+      font-style: italic;
+    }
+    .badge-bar {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 12px;
+    }
+    .badge {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 3px 10px;
+      border-radius: 20px;
+    }
+    .badge-amber  { background: var(--amber-light); color: #92400e; border: 1px solid var(--amber); }
+    .badge-green  { background: var(--green-light); color: #14532d; border: 1px solid #86efac; }
+    .badge-navy   { background: var(--navy-light); color: var(--navy); border: 1px solid #93c5fd; }
+
+    /* Two-column section */
+    .product-cols {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-bottom: 14px;
+    }
+    .product-img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      display: block;
+      background: var(--light);
+    }
+    .product-desc {
+      font-size: 11.5px;
+      color: #2d3748;
+      line-height: 1.65;
+    }
+
+    /* Features */
+    .section-title {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--navy);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+      padding-bottom: 3px;
+      border-bottom: 2px solid var(--amber);
+      display: inline-block;
+    }
+    .features-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3px 16px;
+      margin-bottom: 12px;
+    }
+    .feature-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 5px;
+      font-size: 10.5px;
+      color: #2d3748;
+      line-height: 1.4;
+    }
+    .feature-item::before {
+      content: "✓";
+      color: var(--amber);
+      font-weight: 700;
+      font-size: 11px;
+      flex-shrink: 0;
+      margin-top: 0px;
+    }
+
+    /* Specs table */
+    .specs-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 10px;
+      font-size: 10.5px;
+    }
+    .specs-table th {
+      background: var(--navy);
+      color: var(--white);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 5px 10px;
+      text-align: left;
+    }
+    .specs-table td {
+      padding: 5px 10px;
+      border-bottom: 1px solid var(--border);
+    }
+    .specs-table tr:nth-child(odd) td  { background: var(--light); }
+    .specs-table tr:nth-child(even) td { background: #ffffff; }
+    .specs-table td:first-child {
+      font-weight: 600;
+      color: var(--navy);
+      width: 38%;
+    }
+
+    /* Applications bar */
+    .applications-bar {
+      background: var(--navy-light);
+      border-left: 4px solid var(--amber);
+      padding: 7px 12px;
+      margin-bottom: 10px;
+      font-size: 10.5px;
+      color: #2d3748;
+      line-height: 1.5;
+    }
+    .applications-bar strong {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--navy);
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-right: 6px;
+    }
+
+    /* CTA bar */
+    .cta-bar {
+      display: flex;
+      gap: 8px;
+      margin-top: auto;
+      padding-top: 8px;
+    }
+    .cta-btn {
+      flex: 1;
+      padding: 7px 6px;
+      border-radius: 5px;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 11.5px;
+      font-weight: 700;
+      text-align: center;
+      letter-spacing: 0.5px;
+      border: none;
+      cursor: pointer;
+    }
+    .cta-primary  { background: var(--amber); color: var(--navy); }
+    .cta-phone    { background: var(--navy); color: var(--white); }
+    .cta-whatsapp { background: #25d366; color: #ffffff; }
+
+    /* ===========================
+       PAGE 1 — COVER
+    =========================== */
+    .cover-page {
+      background: var(--navy);
+      min-height: 297mm;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Diagonal decorative strips */
+    .cover-deco {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      overflow: hidden;
+    }
+    .cover-deco .strip1 {
+      position: absolute;
+      top: -40px;
+      right: -60px;
+      width: 220px;
+      height: 560px;
+      background: rgba(245,158,11,0.08);
+      transform: rotate(15deg);
+    }
+    .cover-deco .strip2 {
+      position: absolute;
+      top: -80px;
+      right: -100px;
+      width: 120px;
+      height: 600px;
+      background: rgba(245,158,11,0.05);
+      transform: rotate(15deg);
+    }
+    .cover-deco .strip3 {
+      position: absolute;
+      bottom: 60px;
+      left: -40px;
+      width: 180px;
+      height: 300px;
+      background: rgba(245,158,11,0.04);
+      transform: rotate(-12deg);
+    }
+    .cover-deco .corner-tl {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-top: 80px solid rgba(245,158,11,0.15);
+      border-right: 200px solid transparent;
+    }
+    .cover-deco .corner-br {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 0;
+      height: 0;
+      border-bottom: 80px solid rgba(245,158,11,0.15);
+      border-left: 200px solid transparent;
+    }
+
+    /* Cover top bar */
+    .cover-top {
+      padding: 24px 28px 0 28px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      position: relative;
+      z-index: 2;
+    }
+    .cover-nm-box {
+      background: var(--amber);
+      color: var(--navy);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 900;
+      font-size: 26px;
+      width: 54px;
+      height: 54px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 6px;
+      flex-shrink: 0;
+    }
+    .cover-company {
+      display: flex;
+      flex-direction: column;
+    }
+    .cover-company .cn {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800;
+      font-size: 20px;
+      color: var(--white);
+      letter-spacing: 2px;
+      line-height: 1.1;
+    }
+    .cover-company .ct {
+      font-size: 10px;
+      color: var(--amber);
+      letter-spacing: 2px;
+      margin-top: 3px;
+    }
+
+    /* Cover center hero */
+    .cover-hero {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px 28px;
+      position: relative;
+      z-index: 2;
+    }
+    .cover-hero .divider-top {
+      width: 80px;
+      height: 3px;
+      background: var(--amber);
+      margin-bottom: 20px;
+    }
+    .cover-hero .cat-label {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--amber);
+      letter-spacing: 6px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    .cover-hero .main-title {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 62px;
+      font-weight: 900;
+      color: var(--white);
+      text-align: center;
+      line-height: 1;
+      letter-spacing: 2px;
+      margin-bottom: 12px;
+    }
+    .cover-hero .sub-title {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      color: rgba(255,255,255,0.7);
+      letter-spacing: 3px;
+      text-align: center;
+      margin-bottom: 6px;
+    }
+    .cover-hero .edition {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--amber);
+      letter-spacing: 4px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .cover-hero .divider-bot {
+      width: 80px;
+      height: 3px;
+      background: var(--amber);
+      margin-bottom: 24px;
+    }
+
+    /* Cover product index */
+    .cover-index {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(245,158,11,0.2);
+      border-radius: 8px;
+      padding: 14px 20px;
+      width: 100%;
+      max-width: 500px;
+    }
+    .cover-index .idx-title {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--amber);
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    .cover-index .idx-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4px 20px;
+    }
+    .cover-index .idx-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 10px;
+      color: rgba(255,255,255,0.85);
+      padding: 2px 0;
+    }
+    .cover-index .idx-num {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--amber);
+      min-width: 20px;
+    }
+
+    /* Cover contact bar */
+    .cover-contact {
+      margin: 0 28px;
+      background: rgba(245,158,11,0.1);
+      border: 1px solid rgba(245,158,11,0.3);
+      border-radius: 6px;
+      padding: 10px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      z-index: 2;
+      margin-bottom: 0;
+    }
+    .cover-contact .cc-item {
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+    }
+    .cover-contact .cc-label {
+      font-size: 8px;
+      color: var(--amber);
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+    .cover-contact .cc-value {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--white);
+      letter-spacing: 0.5px;
+    }
+    .cover-contact .cc-sub {
+      font-size: 9px;
+      color: rgba(255,255,255,0.6);
+    }
+
+    /* Cover amber footer strip */
+    .cover-footer-strip {
+      background: var(--amber);
+      padding: 8px 28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      z-index: 2;
+      margin-top: 14px;
+    }
+    .cover-footer-strip span {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--navy);
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+
+    /* ===========================
+       PAGE 2 — OVERVIEW
+    =========================== */
+    .section-heading {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 30px;
+      font-weight: 800;
+      color: var(--navy);
+      letter-spacing: 1px;
+      margin-bottom: 6px;
+    }
+    .intro-text {
+      font-size: 11.5px;
+      color: #2d3748;
+      line-height: 1.7;
+      margin-bottom: 14px;
+      padding: 12px 14px;
+      background: var(--light);
+      border-left: 4px solid var(--amber);
+      border-radius: 0 6px 6px 0;
+    }
+    .overview-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 11px;
+      margin-bottom: 16px;
+    }
+    .overview-table thead tr {
+      background: var(--navy);
+    }
+    .overview-table thead th {
+      color: var(--white);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 7px 12px;
+      text-align: left;
+    }
+    .overview-table tbody tr:nth-child(odd) { background: var(--light); }
+    .overview-table tbody tr:nth-child(even) { background: #ffffff; }
+    .overview-table tbody td {
+      padding: 6px 12px;
+      border-bottom: 1px solid var(--border);
+      color: #2d3748;
+    }
+    .overview-table tbody td:first-child {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--amber);
+      width: 40px;
+    }
+    .overview-table tbody td:nth-child(2) {
+      font-weight: 600;
+      color: var(--navy);
+    }
+
+    .contact-cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+    .contact-card {
+      background: var(--navy);
+      border-radius: 8px;
+      padding: 12px 14px;
+    }
+    .contact-card .cc-head {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--amber);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+      padding-bottom: 4px;
+      border-bottom: 1px solid rgba(245,158,11,0.3);
+    }
+    .contact-card p {
+      font-size: 10px;
+      color: rgba(255,255,255,0.85);
+      line-height: 1.6;
+    }
+    .contact-card strong {
+      color: var(--white);
+      font-size: 11px;
+    }
+
+    /* ===========================
+       PAGE 14 — BACK COVER
+    =========================== */
+    .back-hero {
+      background: var(--navy);
+      padding: 36px 28px 28px 28px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .back-hero .deco1 {
+      position: absolute;
+      top: -30px;
+      left: -30px;
+      width: 160px;
+      height: 160px;
+      background: rgba(245,158,11,0.07);
+      border-radius: 50%;
+    }
+    .back-hero .deco2 {
+      position: absolute;
+      bottom: -40px;
+      right: -40px;
+      width: 200px;
+      height: 200px;
+      background: rgba(245,158,11,0.05);
+      border-radius: 50%;
+    }
+    .back-hero h2 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 44px;
+      font-weight: 900;
+      color: var(--white);
+      letter-spacing: 1px;
+      position: relative;
+      z-index: 2;
+      margin-bottom: 10px;
+    }
+    .back-hero p {
+      font-size: 12px;
+      color: rgba(255,255,255,0.8);
+      max-width: 520px;
+      margin: 0 auto;
+      line-height: 1.7;
+      position: relative;
+      z-index: 2;
+    }
+    .back-info-cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 14px;
+      padding: 20px 22px;
+    }
+    .back-card {
+      border: 2px solid var(--border);
+      border-radius: 10px;
+      padding: 16px;
+      text-align: center;
+    }
+    .back-card .bc-icon {
+      font-size: 24px;
+      margin-bottom: 6px;
+    }
+    .back-card .bc-label {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--navy);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    .back-card p {
+      font-size: 10.5px;
+      color: #2d3748;
+      line-height: 1.65;
+    }
+    .back-card strong {
+      color: var(--navy);
+    }
+    .back-tagline {
+      background: var(--navy);
+      margin: 0 22px;
+      padding: 10px 16px;
+      border-radius: 6px;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      color: rgba(255,255,255,0.85);
+      letter-spacing: 1.5px;
+      text-align: center;
+    }
+    .back-stats {
+      background: var(--amber);
+      margin: 14px 22px;
+      padding: 10px 16px;
+      border-radius: 6px;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--navy);
+      letter-spacing: 2px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    .back-nm-row {
+      padding: 14px 22px 0 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+    }
+    .back-nm-row .bn-company {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 18px;
+      font-weight: 800;
+      color: var(--navy);
+      letter-spacing: 1.5px;
+    }
+    .back-nm-row .bn-tagline {
+      font-size: 10px;
+      color: var(--muted);
+      letter-spacing: 1px;
+    }
+
+    /* ===========================
+       UTILITY
+    =========================== */
+    .amber-rule {
+      height: 3px;
+      background: linear-gradient(90deg, var(--amber) 0%, rgba(245,158,11,0.2) 100%);
+      border: none;
+      margin: 8px 0 12px 0;
+    }
+    .spacer { flex: 1; }
+
+    /* ===========================
+       PRINT STYLES
+    =========================== */
+    @media print {
+      body { background: white; margin: 0; padding: 0; }
+      .page {
+        margin: 0;
+        box-shadow: none;
+        page-break-after: always;
+        width: 210mm;
+        min-height: 297mm;
+      }
+      .no-print { display: none !important; }
+    }
+
+    @page {
+      size: A4 portrait;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+<!-- PRINT BUTTON -->
+<button class="no-print" onclick="window.print()">&#128424; Download / Print PDF</button>
+
+<!-- ============================================================
+     PAGE 1 — COVER
+============================================================ -->
+<div class="page cover-page">
+  <div class="cover-deco">
+    <div class="strip1"></div>
+    <div class="strip2"></div>
+    <div class="strip3"></div>
+    <div class="corner-tl"></div>
+    <div class="corner-br"></div>
+  </div>
+
+  <!-- Top identity bar -->
+  <div class="cover-top">
+    <div class="cover-nm-box">NM</div>
+    <div class="cover-company">
+      <span class="cn">NATIONAL MACHINERY STORES</span>
+      <span class="ct">KADI &nbsp;·&nbsp; MAHESANA GIDC &nbsp;·&nbsp; EST. 1998 &nbsp;·&nbsp; GUJARAT, INDIA</span>
+    </div>
+  </div>
+
+  <!-- Hero centre -->
+  <div class="cover-hero">
+    <div class="divider-top"></div>
+    <div class="cat-label">Official Publication</div>
+    <div class="main-title">PRODUCT<br>CATALOGUE</div>
+    <div class="sub-title">Oil Mill Machinery &nbsp;·&nbsp; Conveyors &nbsp;·&nbsp; Filters &nbsp;·&nbsp; Spare Parts</div>
+    <div class="edition">2025 – 2026 Edition</div>
+    <div class="divider-bot"></div>
+
+    <!-- Product Index -->
+    <div class="cover-index">
+      <div class="idx-title">Product Index</div>
+      <div class="idx-grid">
+        <div class="idx-item"><span class="idx-num">01</span>Mini Oil Expeller</div>
+        <div class="idx-item"><span class="idx-num">07</span>Vassal Oil Neutralizer</div>
+        <div class="idx-item"><span class="idx-num">02</span>High Capacity Oil Expeller</div>
+        <div class="idx-item"><span class="idx-num">08</span>Radler Chain</div>
+        <div class="idx-item"><span class="idx-num">03</span>Screw Conveyor</div>
+        <div class="idx-item"><span class="idx-num">09</span>Oil Expeller Spare Parts</div>
+        <div class="idx-item"><span class="idx-num">04</span>Conveyor Belt</div>
+        <div class="idx-item"><span class="idx-num">10</span>Oil Mill Machinery</div>
+        <div class="idx-item"><span class="idx-num">05</span>Casting Oil Filter</div>
+        <div class="idx-item"><span class="idx-num">11</span>Oil Mill Erector &amp; Service</div>
+        <div class="idx-item"><span class="idx-num">06</span>Plastic Oil Filter (Hydraulic)</div>
+        <div class="idx-item"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact bar -->
+  <div class="cover-contact">
+    <div class="cc-item">
+      <span class="cc-label">Contact</span>
+      <span class="cc-value">Iqbalhusen Chisti</span>
+      <span class="cc-sub">Founder &amp; Proprietor</span>
+    </div>
+    <div class="cc-item">
+      <span class="cc-label">Phone / WhatsApp</span>
+      <span class="cc-value">+91 88666 88626</span>
+      <span class="cc-sub">Hindi · Gujarati · English</span>
+    </div>
+    <div class="cc-item" style="max-width:200px;">
+      <span class="cc-label">Office</span>
+      <span class="cc-sub" style="color:rgba(255,255,255,0.7);font-size:9px;">12, Someshwar Complex, Nandasan Highway Road, Kadi, Mahesana GIDC – 382715, Gujarat</span>
+    </div>
+    <div class="cc-item">
+      <span class="cc-label">Website</span>
+      <span class="cc-value" style="font-size:11px;">nationalmachinerystores.com</span>
+    </div>
+  </div>
+
+  <!-- Amber footer strip -->
+  <div class="cover-footer-strip">
+    <span>2000+ Clients</span>
+    <span>18+ States</span>
+    <span>25+ Years</span>
+    <span>Est. 1998</span>
+    <span>PAN India Delivery</span>
+  </div>
+</div><!-- /PAGE 1 -->
+
+<!-- ============================================================
+     PAGE 2 — COMPLETE PRODUCT RANGE (OVERVIEW)
+============================================================ -->
+<div class="page">
+  <div class="page-header">
+    <div class="hdr-left">
+      <div class="nm-box nm-box-sm">NM</div>
+      <div class="hdr-company">
+        <span class="name">NATIONAL MACHINERY STORES</span>
+        <span class="sub">PRODUCT CATALOGUE &nbsp;·&nbsp; 2025–2026 EDITION &nbsp;·&nbsp; KADI, MAHESANA GIDC</span>
+      </div>
+    </div>
+    <div class="hdr-right">
+      <div class="phone">+91 88666 88626</div>
+      <div class="web">nationalmachinerystores.com</div>
+    </div>
+  </div>
+
+  <div class="page-body">
+    <div class="section-heading">Complete Product Range</div>
+    <hr class="amber-rule" />
+
+    <div class="intro-text">
+      National Machinery Stores, Kadi, Mahesana GIDC, is a Manufacturer, Exporter, Supplier, Service Provider, and Retailer of oil mill machinery and industrial equipment. Founded by Iqbalhusen Chisti, the company has served <strong>2000+ clients across 18+ states</strong> with quality machinery, genuine spare parts, and complete plant services. This catalogue covers our full range of <strong>11 product categories</strong> — all available new or refurbished. PAN India Delivery. GST billing available. Our team speaks <strong>Hindi, Gujarati &amp; English.</strong>
+    </div>
+
+    <table class="overview-table">
+      <thead>
+        <tr>
+          <th>No.</th>
+          <th>Product / Service</th>
+          <th>Category</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>01</td><td>Mini Oil Expeller</td><td>Oil Extraction Machinery</td></tr>
+        <tr><td>02</td><td>High Capacity Oil Expeller</td><td>Oil Extraction Machinery</td></tr>
+        <tr><td>03</td><td>Screw Conveyor</td><td>Material Handling Equipment</td></tr>
+        <tr><td>04</td><td>Conveyor Belt</td><td>Material Handling Equipment</td></tr>
+        <tr><td>05</td><td>Casting Oil Filter</td><td>Oil Filtration &amp; Clarification</td></tr>
+        <tr><td>06</td><td>Plastic Oil Filter (Hydraulic)</td><td>Oil Filtration &amp; Clarification</td></tr>
+        <tr><td>07</td><td>Vassal Oil Neutralizer</td><td>Oil Refining Equipment</td></tr>
+        <tr><td>08</td><td>Radler Chain</td><td>Material Handling Equipment</td></tr>
+        <tr><td>09</td><td>Oil Expeller Spare Parts</td><td>Spare Parts &amp; Components</td></tr>
+        <tr><td>10</td><td>Oil Mill Machinery</td><td>Complete Plant Machinery</td></tr>
+        <tr><td>11</td><td>Oil Mill Erector, Demolition &amp; Total Service</td><td>Installation &amp; Service</td></tr>
+      </tbody>
+    </table>
+
+    <div class="contact-cards">
+      <div class="contact-card">
+        <div class="cc-head">Contact</div>
+        <p><strong>Iqbalhusen Chisti</strong><br />Founder &amp; Proprietor<br /><strong>+91 88666 88626</strong><br />nationalmachinerystores.com<br />Hindi · Gujarati · English<br />Response: 24–48 Hours</p>
+      </div>
+      <div class="contact-card">
+        <div class="cc-head">Office Address</div>
+        <p>12, Someshwar Complex<br />Nandasan Highway Road<br />Kadi, Mahesana GIDC<br />– 382715, Gujarat, India</p>
+      </div>
+      <div class="contact-card">
+        <div class="cc-head">Factory Address</div>
+        <p>Kadi Nandasan Road<br />Opp. Ultratech RMC Plant<br />Survey No. 91, At: Kundal (Kadi)<br />Dist: Mehsana – 382715, Gujarat</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-footer">
+    <span class="ft-text">© 2025 National Machinery Stores &nbsp;·&nbsp; 12, Someshwar Complex, Nandasan Highway Road, Kadi, Mahesana GIDC – 382715, Gujarat, India</span>
+    <span class="ft-page">Page 2 / 14</span>
+  </div>
+</div><!-- /PAGE 2 -->
+
+<!-- ============================================================
+     PAGE 3 — MINI OIL EXPELLER
+============================================================ -->
+<div class="page">
+  <div class="page-header">
+    <div class="hdr-left">
+      <div class="nm-box nm-box-sm">NM</div>
+      <div class="hdr-company">
+        <span class="name">NATIONAL MACHINERY STORES</span>
+        <span class="sub">PRODUCT CATALOGUE &nbsp;·&nbsp; 2025–2026 EDITION &nbsp;·&nbsp; KADI, MAHESANA GIDC</span>
+      </div>
+    </div>
+    <div class="hdr-right">
+      <div class="phone">+91 88666 88626</div>
+      <div class="web">nationalmachinerystores.com</div>
+    </div>
+  </div>
+
+  <div class="page-body" style="position:relative;">
+    <div class="product-watermark">01</div>
+    <div class="product-number-label">PRODUCT 01</div>
+    <div class="product-title">Mini Oil Expeller</div>
+    <div class="product-tagline">Compact Extraction for Small-Scale Oil Mills &amp; Village-Level Production</div>
+    <div class="badge-bar">
+      <span class="badge badge-amber">BEST SELLER</span>
+      <span class="badge badge-navy">IN STOCK</span>
+      <span class="badge badge-navy">PAN INDIA DELIVERY</span>
+    </div>
+
+    <div class="product-cols">
+      <div>
+        <img class="product-img" src="https://img3.exportersindia.com/product_images/bc-full/2023/9/4655927/mini-oil-expeller-1501756515-3191168.jpg" alt="Mini Oil Expeller" />
+      </div>
+      <div class="product-desc">
+        The Mini Oil Expeller is designed for small-scale oil mills requiring high-quality extraction with minimal power consumption. Compact design, easy operation, and low maintenance. Suitable for groundnut, mustard, sesame, sunflower, soybean, coconut, and all common oilseeds. Ideal for village-level production, startup ventures, cooperative societies, and small processing units. Available in both new and refurbished condition.
+      </div>
+    </div>
+
+    <div class="section-title">Key Features</div>
+    <div class="features-grid" style="margin-top:6px;">
+      <div class="feature-item">High oil extraction efficiency — low residual oil in cake</div>
+      <div class="feature-item">Compact design — minimal floor space requirement</div>
+      <div class="feature-item">Low power consumption: 3 HP to 15 HP</div>
+      <div class="feature-item">Simple operation — minimal operator training required</div>
+      <div class="feature-item">Durable cast iron and alloy steel construction</div>
+      <div class="feature-item">Compatible with all types of oilseeds</div>
+    </div>
+
+    <div class="section-title">Technical Specifications</div>
+    <table class="specs-table">
+      <thead><tr><th>Specification</th><th>Value</th></tr></thead>
+      <tbody>
+        <tr><td>Capacity</td><td>1 to 5 Tons per Day</td></tr>
+        <tr><td>Power Required</td><td>3 HP to 15 HP</td></tr>
+        <tr><td>Oil Yield</td><td>Up to 98% extraction efficiency</td></tr>
+        <tr><td>Material</td><td>Cast Iron / MS / Alloy Steel</td></tr>
+        <tr><td>Operation</td><td>Manual / Semi-Automatic</td></tr>
+        <tr><td>Seed Types</td><td>Groundnut, Mustard, Sesame, Sunflower, Soybean, Coconut</td></tr>
+        <tr><td>Warranty</td><td>1 Year (New) &nbsp;·&nbsp; 3–6 Months (Refurbished)</td></tr>
+      </tbody>
+    </table>
+
+    <div class="applications-bar">
+      <strong>Applications:</strong>
+      Small oil mills, home-based extraction, village-level processing, cooperatives, startup edible oil ventures, farm-level groundnut and sesame oil production.
+    </div>
+
+    <div class="cta-bar">
+      <div class="cta-btn cta-primary">GET BEST PRICE &#8594;</div>
+      <div class="cta-btn cta-phone">&#128222; +91 88666 88626</div>
+      <div class="cta-btn cta-whatsapp">&#128172; WhatsApp: +91 88666 88626</div>
+    </div>
+  </div>
+
+  <div class="page-footer">
+    <span class="ft-text">© 2025 National Machinery Stores &nbsp;·&nbsp; 12, Someshwar Complex, Nandasan Highway Road, Kadi, Mahesana GIDC – 382715, Gujarat, India</span>
+    <span class="ft-page">Page 3 / 14</span>
+  </div>
+</div><!-- /PAGE 3 -->
+
+<!-- ============================================================
+     PAGE 4 — HIGH CAPACITY OIL EXPELLER
+============================================================ -->
+<div class="page">
+  <div class="page-header">
+    <div class="hdr-left">
+      <div class="nm-box nm-box-sm">NM</div>
+      <div class="hdr-company">
+        <span class="name">NATIONAL MACHINERY STORES</span>
+        <span class="sub">PRODUCT CATALOGUE &nbsp;·&nbsp; 2025–2026 EDITION &nbsp;·&nbsp; KADI, MAHESANA GIDC</span>
+      </div>
+    </div>
+    <div class="hdr-right">
+      <div class="phone">+91 88666 88626</div>
+      <div class="web">nationalmachinerystores.com</div>
+    </div>
+  </div>
+
+  <div class="page-body" style="position:relative;">
+    <div class="product-watermark">02</div>
+    <div class="product-number-label">PRODUCT 02</div>
+    <div class="product-title">High Capacity Oil Expeller</div>
+    <div class="product-tagline">Industrial-Grade Continuous Extraction for Large-Scale Commercial Oil Mills</div>
+    <div class="badge-bar">
+      <span class="badge badge-navy">INDUSTRIAL GRADE</span>
+      <span class="badge badge-amber">HIGH THROUGHPUT</span>
+      <span class="badge badge-navy">PAN INDIA DELIVERY</span>
+    </div>
+
+    <div class="product-cols">
+      <div>
+        <img class="product-img" src="https://img3.exportersindia.com/product_images/bc-full/dir_156/4655927/high-capacity-oil-expeller-1501820204-3191167.jpeg" alt="High Capacity Oil Expeller" />
+      </div>
+      <div class="product-desc">
+        The High Capacity Oil Expeller is engineered for large-scale commercial production with precision gearbox and heavy-duty pressing assembly. Delivers consistent high throughput with low energy per unit output — built to handle demanding 24-hour operations in industrial oil mills. Available PAN India with quality packaging ensuring zero damage at buyer's end.
+      </div>
+    </div>
+
+    <div class="section-title">Key Features</div>
+    <div class="features-grid" style="margin-top:6px;">
+      <div class="feature-item">High structural strength — designed for continuous 24-hour operation</div>
+      <div class="feature-item">Heavy-duty worm shaft and pressing barrel assembly</div>
+      <div class="feature-item">Precision-cut gearbox for smooth, reliable drive</div>
+      <div class="feature-item">High oil recovery with minimal residual oil in cake</div>
+      <div class="feature-item">Easy access panels for maintenance and part replacement</div>
+      <div class="feature-item">Available in semi-automatic and fully automatic variants</div>
+    </div>
+
+    <div class="section-title">Technical Specifications</div>
+    <table class="specs-table">
+      <thead><tr><th>Specification</th><th>Value</th></tr></thead>
+      <tbody>
+        <tr><td>Capacity</td><td>5 to 50+ Tons per Day</td></tr>
+        <tr><td>Power Required</td><td>20 HP to 75 HP</td></tr>
+        <tr><td>Oil Yield</td><td>Up to 98% extraction efficiency</td></tr>
+        <tr><td>Material</td><td>Heavy-Duty Cast Iron / Alloy Steel</td></tr>
+        <tr><td>Operation</td><td>Semi-Automatic / Fully Automatic</td></tr>
+        <tr><td>Seed Types</td><td>All commercial oilseeds</td></tr>
+        <tr><td>Warranty</td><td>1 Year (New) &nbsp;·&nbsp; 3–6 Months (Refurbished)</td></tr>
+      </tbody>
+    </table>
+
+    <div class="applications-bar">
+      <strong>Applications:</strong>
+      Commercial edible oil mills, industrial groundnut oil factories, mustard and rapeseed oil plants, soybean oil processing units, multi-seed extraction plants.
+    </div>
+
+    <div class="cta-bar">
+      <div class="cta-btn cta-primary">GET BEST PRICE &#8594;</div>
+      <div class="cta-btn cta-phone">&#128222; +91 88666 88626</div>
+      <div class="cta-btn cta-whatsapp">&#128172; WhatsApp: +91 88666 88626</div>
+    </div>
+  </div>
+
+  <div class="page-footer">
+    <span class="ft-text">© 2025 National Machinery Stores &nbsp;·&nbsp; 12, Someshwar Complex, Nandasan Highway Road, Kadi, Mahesana GIDC – 382715, Gujarat, India</span>
+    <span class="ft-page">Page 4 / 14</span>
+  </div>
+</div><!-- /PAGE 4 -->
+
+<!-- ============================================================
+     PAGE 5 — SCREW CONVEYOR
+============================================================ -->
+<div class="page">
+  <div class="page-header">
+    <div class="hdr-left">
+      <div class="nm-box nm-box-sm">NM</div>
+      <div class="hdr-company">
+        <span class="name">NATIONAL MACHINERY STORES</span>
+        <span class="sub">PRODUCT CATALOGUE &nbsp;·&nbsp; 2025–2026 EDITION &nbsp;·&nbsp; KADI, MAHESANA GIDC</span>
+      </div>
+    </div>
+    <div class="hdr-right">
+      <div class="phone">+91 88666 88626</div>
+      <div class="web">nationalmachinerystores.com</div>
+    </div>
+  </div>
+
+  <div class="page-body" style="position:relative;">
+    <div class="product-watermark">03</div>
+    <div class="product-number-label">PRODUCT 03</div>
+    <div class="product-title">Screw Conveyor</div>
+    <div class="product-tagline">Smooth Bulk Material Handling for Oil Mills and Industrial Plants</div>
+    <div class="badge-bar">
+      <span class="badge badge-green">IN STOCK</span>
+      <span class="badge badge-navy">CUSTOM SIZES</span>
+      <span class="badge badge-navy">MS &amp; SS AVAILABLE</span>
+    </div>
+
+    <div class="product-cols">
+      <div>
+        <img class="product-img" src="https://img3.exportersindia.com/product_images/bc-full/2023/9/4655927/screw-conveyor-1501756574-3191178.jpg" alt="Screw Conveyor" />
+      </div>
+      <div class="product-desc">
+        These Screw Conveyors deliver excellent flowability for smooth bulk material handling in oil mills and industrial plants. Fabricated with quality raw materials. Available in custom lengths, diameters, and configurations for horizontal, inclined, and vertical installation.
+      </div>
+    </div>
+
+    <div class="section-title">Key Features</div>
+    <div class="features-grid" style="margin-top:6px;">
+      <div class="feature-item">Excellent flowability — consistent smooth material movement</div>
+      <div class="feature-item">Custom length and diameter per your plant layout</div>
+      <div class="feature-item">Horizontal, inclined, and vertical configurations available</div>
+      <div class="feature-item">Mild Steel (MS) and Stainless Steel (SS 304 / SS 316)</div>
+      <div class="feature-item">Suitable for seeds, oil cake, meal, flour, and granules</div>
+      <div class="feature-item">Heavy-duty bearings and shafting for long service life</div>
+    </div>
+
+    <div class="section-title">Technical Specifications</div>
+    <table class="specs-table">
+      <thead><tr><th>Specification</th><th>Value</th></tr></thead>
+      <tbody>
+        <tr><td>Diameter</td><td>4" to 18" (100mm to 450mm)</td></tr>
+        <tr><td>Length</td><td>Up to 10 metres (custom available)</td></tr>
+        <tr><td>Capacity</td><td>0.5 to 50 Tons per Hour</td></tr>
+        <tr><td>Material</td><td>MS / SS 304 / SS 316</td></tr>
+        <tr><td>Drive</td><td>Geared motor — direct or belt drive</td></tr>
+        <tr><td>Configuration</td><td>Horizontal / Inclined / Vertical</td></tr>
+      </tbody>
+    </table>
+
+    <div class="applications-bar">
+      <strong>Applications:</strong>
+      Oilseed feeding to expeller, oil cake and meal discharge, flour mills, rice bran handling, fertilizer plants, agro-processing units, bulk material internal conveying.
+    </div>
+
+    <div class="cta-bar">
+      <div class="cta-btn cta-primary">GET BEST PRICE &#8594;</div>
+      <div class="cta-btn cta-phone">&#128222; +91 88666 88626</div>
+      <div class="cta-btn cta-whatsapp">&#128172; WhatsApp: +91 88666 88626</div>
+    </div>
+  </div>
+
+  <div class="page-footer">
+    <span class="ft-text">© 2025 National Machinery Stores &nbsp;·&nbsp; 12, Someshwar Complex, Nandasan Highway Road, Kadi, Mahesana GIDC – 382715, Gujarat, India</span>
+    <span class="ft-page">Page 5 / 14</span>
+  </div>
+</div><!-- /PAGE 5 -->
+
+<!-- ============================================================
+     PAGE 6 — CONVEYOR BELT
+============================================================ -->
+<div class="page">
+  <div class="page-header">
+    <div class="hdr-left">
+      <div class="nm-box nm-box-sm">NM</div>
+      <div class="hdr-company">
+        <span class="name">NATIONAL MACHINERY STORES</span>
+        <span class="sub">PRODUCT CATALOGUE &nbsp;·&nbsp; 2025–2026 EDITION &nbsp;·&nbsp; KADI, MAHESANA GIDC</span>
+      </div>
+    </div>
+    <div class="hdr-right">
+      <div class="phone">+91 88666 88626</div>
+      <div class="web">nationalmachinerystores.com</div>
+    </div>
+  </div>
+
+  <div class="page-body" style="position:relative;">
+    <div class="product-watermark">04</div>
+    <div class="product-number-label">PRODUCT 04</div>
+    <div class="product-title">Conveyor Belt</div>
+    <div class="product-tagline">Industrial Belting for Oil Mills, Agro-Processing &amp; Heavy Industries</div>
+    <div class="badge-bar">
+      <span class="badge badge-green">IN STOCK</span>
+      <span class="badge badge-amber">CUT TO LENGTH</span>
+      <span class="badge badge-navy">OIL &amp; HEAT RESISTANT</span>
+    </div>
+
+    <div class="product-cols">
+      <div>
+        <img class="product-img" src="https://img3.exportersindia.com/product_images/bc-full/dir_156/4655927/conveyor-belt-1501820860-3191174.jpeg" alt="Conveyor Belt" />
+      </div>
+      <div class="product-desc">
+        These Conveyor Belts offer good resistance to edge wear. Manufactured to strict quality standards with professional packing ensuring zero damage at buyer's end. Available in oil-resistant and heat-resistant grades suited to oil mill environments. Cut-to-length and ready-splice service available.
+      </div>
+    </div>
+
+    <div class="section-title">Key Features</div>
+    <div class="features-grid" style="margin-top:6px;">
+      <div class="feature-item">Good resistance to edge wear and abrasion</div>
+      <div class="feature-item">Oil-resistant and heat-resistant grades available</div>
+      <div class="feature-item">High tensile strength for heavy industrial loads</div>
+      <div class="feature-item">2-ply, 3-ply, and 4-ply configurations available</div>
+      <div class="feature-item">Rubber and PVC belt options</div>
+      <div class="feature-item">All widths 12" (300mm) to 72" (1800mm) — cut to length</div>
+    </div>
+
+    <div class="section-title">Technical Specifications</div>
+    <table class="specs-table">
+      <thead><tr><th>Specification</th><th>Value</th></tr></thead>
+      <tbody>
+        <tr><td>Width</td><td>300mm to 1800mm (12" to 72")</td></tr>
+        <tr><td>Thickness</td><td>6mm to 20mm</td></tr>
+        <tr><td>Tensile Strength</td><td>315 N/mm to 800 N/mm</td></tr>
+        <tr><td>Belt Type</td><td>Rubber / PVC / Chevron / Rough Top</td></tr>
+        <tr><td>Grade</td><td>General / Heat-Resistant / Oil-Resistant</td></tr>
+        <tr><td>Ply Options</td><td>2-ply, 3-ply, 4-ply</td></tr>
+      </tbody>
+    </table>
+
+    <div class="applications-bar">
+      <strong>Applications:</strong>
+      Oil mills, flour mills, rice mills, stone crushers, cement plants, mining operations, agro-processing units, seed handling and material transport lines.
+    </div>
+
+    <div class="cta-bar">
+      <div class="cta-btn cta-primary">GET BEST PRICE &#8594;</div>
+      <div class="cta-btn cta-phone">&#128222; +91 88666 88626</div>
+      <div class="cta-btn cta-whatsapp">&#128172; WhatsApp: +91 88666 88626</div>
+    </div>
+  </div>
+
+  <div class="page-footer">
+    <span class="ft-text">© 2025 National Machinery Stores &nbsp;·&nbsp; 12, Someshwar Complex, Nandasan Highway Road, Kadi, Mahesana GIDC – 382715, Gujarat, India</span>
+    <span class="ft-page">Page 6 / 14</span>
+  </div>
+</div><!-- /PAGE 6 -->
+
+<!-- ============================================================
+     PAGE 7 — CASTING OIL FILTER
+============================================================ -->
+<div class="page">
+  <div class="page-header">
+    <div class="hdr-left">
+      <div class="nm-box nm-box-sm">NM</div>
+      <div class="hdr-company">
+        <span class="name">NATIONAL MACHINERY STORES</span>
+        <span class="sub">PRODUCT CATALOGUE &nbsp;·&nbsp; 2025–2026 EDITION &nbsp;·&nbsp; KADI, MAHESANA GIDC</span>
+      </div>
+    </div>
+    <div class="hdr-right">
+      <div class="phone">+91 88666 88626</div>
+      <div class="web">nationalmachinerystores.com</div>
+    </div>
+  </div>
+
+  <div class="page-body" style="position:relative;">
+    <div class="product-watermark">05</div>
+    <div class="product-number-label">PRODUCT 05</div>
+    <div class="product-title">Casting Oil Filter</div>
+    <div class="product-tagline">Heavy-Duty Cast Iron Filter Press for All Edible Oil Types</div>
+    <div class="badge-bar">
+      <span class="badge badge-amber">FAST DISPATCH</span>
+      <span class="badge badge-navy">ALL SIZES</span>
+      <span class="badge badge-navy">ENGINEER SUPPORT</span>
+    </div>
+
+    <div class="product-cols">
+      <div>
+        <img class="product-img" src="https://img3.exportersindia.com/product_images/bc-full/2023/9/4655927/casting-oil-filter-1502530826-3217832.jpg" alt="Casting Oil Filter" />
+      </div>
+      <div class="product-desc">
+        Casting Oil Filter available in all sizes matched to your production capacity — with total honest advisory and fitting engineer support. Heavy-duty cast iron frame and plates deliver maximum durability for continuous high-volume oil processing. Effectively removes suspended particles, wax, gums, and fine impurities. Compatible with all major edible oils and oil expeller brands.
+      </div>
+    </div>
+
+    <div class="section-title">Key Features</div>
+    <div class="features-grid" style="margin-top:6px;">
+      <div class="feature-item">All sizes available matched to production capacity</div>
+      <div class="feature-item">Heavy-duty cast iron construction for long service life</div>
+      <div class="feature-item">Fitting engineer support provided</div>
+      <div class="feature-item">Removes wax, gums, particles, and fine impurities</div>
+      <div class="feature-item">Compatible with all edible oil types</div>
+      <div class="feature-item">Easy plate change and filter cloth replacement</div>
+    </div>
+
+    <div class="section-title">Technical Specifications</div>
+    <table class="specs-table">
+      <thead><tr><th>Specification</th><th>Value</th></tr></thead>
+      <tbody>
+        <tr><td>Type</td><td>Manual / Hydraulic Casting Filter Press</td></tr>
+        <tr><td>Plate Size</td><td>320mm, 400mm, 470mm, 630mm (standard)</td></tr>
+        <tr><td>Plate Count</td><td>10 to 60 plates</td></tr>
+        <tr><td>Frame</td><td>Cast Iron</td></tr>
+        <tr><td>Filtration</td><td>1–50 micron depending on filter cloth</td></tr>
+        <tr><td>Support</td><td>On-site fitting engineer available</td></tr>
+      </tbody>
+    </table>
+
+    <div class="applications-bar">
+      <strong>Applications:</strong>
+      Groundnut, mustard, sesame, sunflower, soybean oil clarification and polishing. Post-extraction de-waxing and impurity removal in all edible oil processing plants.
+    </div>
+
+    <div class="cta-bar">
+      <div class="cta-btn cta-primary">GET BEST PRICE &#8594;</div>
+      <div class="cta-btn cta-phone">&#128222; +91 88666 88626</div>
+      <div class="cta-btn cta-whatsapp">&#128172; WhatsApp: +91 88666 88626</div>
+    </div>
+  </div>
+
+  <div class="page-footer">
+    <span class="ft-text">© 2025 National Machinery Stores &nbsp;·&nbsp; 12, Someshwar Complex, Nandasan Highway Road, Kadi, Mahesana GIDC – 382715, Gujarat, India</span>
+    <span class="ft-page">Page 7 / 14</span>
+  </div>
+</div><!-- /PAGE 7 -->
+
+<!-- ============================================================
+     PAGE 8 — PLASTIC OIL FILTER (HYDRAULIC)
+============================================================ -->
+<div class="page">
+  <div class="page-header">
+    <div class="hdr-left">
+      <div class="nm-box nm-box-sm">NM</div>
+      <div class="hdr-company">
+        <span class="name">NATIONAL MACHINERY STORES</span>
+        <span class="sub">PRODUCT CATALOGUE &nbsp;·&nbsp; 2025–2026 EDITION &nbsp;·&nbsp; KADI, MAHESANA GIDC</span>
+      </div>
+    </div>
+    <div class="hdr-right">
+      <div class="phone">+91 88666 88626</div>
+      <div class="web">nationalmachinerystores.com</div>
+    </div>
+  </div>
+
+  <div class="page-body" style="position:relative;">
+    <div class="product-watermark">06</div>
+    <div class="product-number-label">PRODUCT 06</div>
+    <div class="product-title">Plastic Oil Filter (Hydraulic)</div>
+    <div class="product-tagline">Lightweight Hydraulic Filter Press — Best Choice for New Oil Mill Plant Setups</div>
+    <div class="badge-bar">
+      <span class="badge badge-navy">BEST FOR NEW PLANTS</span>
+      <span class="badge badge-amber">LIGHTWEIGHT</span>
+      <span class="badge badge-navy">FULLY HYDRAULIC</span>
+    </div>
+
+    <div class="product-cols">
+      <div>
+        <img class="product-img" src="https://img3.exportersindia.com/product_images/bc-full/2023/9/4655927/plastic-oil-filter-hydraulic-1502531297-3217857.jpg" alt="Plastic Oil Filter Hydraulic" />
+      </div>
+      <div class="product-desc">
+        Plastic Oil Filter is the best choice for new oil mill plant setups. Lightweight construction and fully hydraulic pressing mechanism eliminate manual effort during filtration cycles. Available in all sizes at a reasonable price. Best value proposition for new entrepreneurs setting up their first oil extraction and clarification plant.
+      </div>
+    </div>
+
+    <div class="section-title">Key Features</div>
+    <div class="features-grid" style="margin-top:6px;">
+      <div class="feature-item">Best choice for new oil mill plant installations</div>
+      <div class="feature-item">Lightweight — significantly lighter than traditional casting filter</div>
+      <div class="feature-item">Fully hydraulic pressing — zero manual effort required</div>
+      <div class="feature-item">Available in all plate sizes by order</div>
+      <div class="feature-item">Corrosion-free food-grade polypropylene (PP) plates</div>
+      <div class="feature-item">Easy cleaning and fast filter cloth replacement</div>
+    </div>
+
+    <div class="section-title">Technical Specifications</div>
+    <table class="specs-table">
+      <thead><tr><th>Specification</th><th>Value</th></tr></thead>
+      <tbody>
+        <tr><td>Type</td><td>Fully Hydraulic Plastic Filter Press</td></tr>
+        <tr><td>Plate Size</td><td>320mm to 630mm (all sizes by order)</td></tr>
+        <tr><td>Plate Material</td><td>Food-grade Polypropylene (PP)</td></tr>
+        <tr><td>Frame</td><td>MS frame with hydraulic cylinder</td></tr>
+        <tr><td>Operation</td><td>Hydraulic — minimal manual effort</td></tr>
+        <tr><td>Advantage</td><td>Lighter and more affordable vs casting filter</td></tr>
+      </tbody>
+    </table>
+
+    <div class="applications-bar">
+      <strong>Applications:</strong>
+      New oil mill plants, mid-scale edible oil units, mobile oil processing setups, entrepreneurs setting up their first groundnut or sesame oil extraction plant.
+    </div>
+
+    <div class="cta-bar">
+      <div class="cta-btn cta-primary">GET BEST PRICE &#8594;</div>
+      <div class="cta-btn cta-phone">&#128222; +91 88666 88626</div>
+      <div class="cta-btn cta-whatsapp">&#128172; WhatsApp: +91 88666 88626</div>
+    </div>
+  </div>
+
+  <div class="page-footer">
+    <span class="ft-text">© 2025 National Machinery Stores &nbsp;·&nbsp; 12, Someshwar Complex, Nandasan Highway Road, Kadi, Mahesana GIDC – 382715, Gujarat, India</span>
+    <span class="ft-page">Page 8 / 14</span>
+  </div>
+</div><!-- /PAGE 8 -->
+
+<!-- ============================================================
+     PAGE 9 — VASSAL OIL NEUTRALIZER
+============================================================ -->
+<div class="page">
+  <div class="page-header">
+    <div class="hdr-left">
+      <div class="nm-box nm-box-sm">NM</div>
+      <div class="hdr-company">
+        <span class="name">NATIONAL MACHINERY STORES</span>
+        <span class="sub">PRODUCT CATALOGUE &nbsp;·&nbsp; 2025–2026 EDITION &nbsp;·&nbsp; KADI, MAHESANA GIDC</span>
+      </div>
+    </div>
+    <div class="hdr-right">
+      <div class="phone">+91 88666 88626</div>
+      <div class="web">nationalmachinerystores.com</div>
+    </div>
+  </div>
+
+  <div class="page-body" style="position:relative;">
+    <div class="product-watermark">07</div>
+    <div class="product-number-label">PRODUCT 07</div>
+    <div class="product-title">Vassal Oil Neutralizer</div>
+    <div class="product-tagline">FFA Neutralization Vessels — MS &amp; SS for Edible Oil Refining</div>
+    <div class="badge-bar">
+      <span class="badge badge-navy">SPECIALTY ITEM</span>
+      <span class="badge badge-amber">MS &amp; SS AVAILABLE</span>
+      <span class="badge badge-navy">ALL SIZES</span>
+    </div>
+
+    <div class="product-cols">
+      <div>
+        <img class="product-img" src="https://img3.exportersindia.com/product_images/bc-full/2023/9/4655927/vassal-oil-neutraliser-1502530863-3217629.jpg" alt="Vassal Oil Neutralizer" />
+      </div>
+      <div class="product-desc">
+        All types of oil mill vessels available at reasonable prices — including MS (Mild Steel) and SS (Stainless Steel) configurations for oil neutralization. The Vassal Oil Neutralizer neutralizes free fatty acids (FFA) in crude pressed oil using the alkali washing process, resulting in refined oil with improved quality, colour, and shelf life.
+      </div>
+    </div>
+
+    <div class="section-title">Key Features</div>
+    <div class="features-grid" style="margin-top:6px;">
+      <div class="feature-item">Available in MS (Mild Steel) and SS (Stainless Steel)</div>
+      <div class="feature-item">All types and sizes at reasonable prices</div>
+      <div class="feature-item">Honest service and reliable delivery commitment</div>
+      <div class="feature-item">Neutralizes free fatty acids (FFA) effectively</div>
+      <div class="feature-item">Improves oil quality, colour, and shelf life</div>
+      <div class="feature-item">Steam-jacketed for precise temperature control</div>
+    </div>
+
+    <div class="section-title">Technical Specifications</div>
+    <table class="specs-table">
+      <thead><tr><th>Specification</th><th>Value</th></tr></thead>
+      <tbody>
+        <tr><td>Process</td><td>Alkali (Caustic Soda) Neutralization of FFA</td></tr>
+        <tr><td>Material</td><td>MS / SS 304 / SS 316 (as required)</td></tr>
+        <tr><td>Capacity</td><td>100 Litres to 5000 Litres batch</td></tr>
+        <tr><td>Heating</td><td>Steam-jacketed / Electric heating</td></tr>
+        <tr><td>Output</td><td>Neutralized crude oil ready for bleaching / deodorization</td></tr>
+        <tr><td>Types</td><td>MS Vassal, SS Vassal — all configurations</td></tr>
+      </tbody>
+    </table>
+
+    <div class="applications-bar">
+      <strong>Applications:</strong>
+      Edible oil refining plants, integrated extraction and refining units, groundnut, mustard and sunflower refining, export-quality edible oil production requiring low FFA content.
+    </div>
+
+    <div class="cta-bar">
+      <div class="cta-btn cta-primary">GET BEST PRICE &#8594;</div>
+      <div class="cta-btn cta-phone">&#128222; +91 88666 88626</div>
+      <div class="cta-btn cta-whatsapp">&#128172; WhatsApp: +91 88666 88626</div>
+    </div>
+  </div>
+
+  <div class="page-footer">
+    <span class="ft-text">© 2025 National Machinery Stores &nbsp;·&nbsp; 12, Someshwar Complex, Nandasan Highway Road, Kadi, Mahesana GIDC – 382715, Gujarat, India</span>
+    <span class="ft-page">Page 9 / 14</span>
+  </div>
+</div><!-- /PAGE 9 -->
+
+<!-- ============================================================
+     PAGE 10 — RADLER CHAIN
+============================================================ -->
+<div class="page">
+  <div class="page-header">
+    <div class="hdr-left">
+      <div class="nm-box nm-box-sm">NM</div>
+      <div class="hdr-company">
+        <span class="name">NATIONAL MACHINERY STORES</span>
+        <span class="sub">PRODUCT CATALOGUE &nbsp;·&nbsp; 2025–2026 EDITION &nbsp;·&nbsp; KADI, MAHESANA GIDC</span>
+      </div>
+    </div>
+    <div class="hdr-right">
+      <div class="phone">+91 88666 88626</div>
+      <div class="web">nationalmachinerystores.com</div>
+    </div>
+  </div>
+
+  <div class="page-body" style="position:relative;">
+    <div class="product-watermark">08</div>
+    <div class="product-number-label">PRODUCT 08</div>
+    <div class="product-title">Radler Chain</div>
+    <div class="product-tagline">En-Masse Bulk Chain Conveying for Oil Mills &amp; Agro-Processing Plants</div>
+    <div class="badge-bar">
+      <span class="badge badge-green">IN STOCK</span>
+      <span class="badge badge-amber">ALL TYPES</span>
+      <span class="badge badge-navy">NEW &amp; OLD PLANT</span>
+    </div>
+
+    <div class="product-cols">
+      <div>
+        <img class="product-img" src="https://img3.exportersindia.com/product_images/bc-full/2023/9/4655927/radler-chain-1502531033-3217844.jpg" alt="Radler Chain" />
+      </div>
+      <div class="product-desc">
+        All types of Radler Chain available by order. Suitable for new and old plant fitting and all associated services. Industrial Radler (Redler) en-masse chain conveyor systems for bulk material handling in oil mills and factories — moves oilseeds, oil cake, flour, and granules through enclosed troughs without breakage, dusting, or segregation.
+      </div>
+    </div>
+
+    <div class="section-title">Key Features</div>
+    <div class="features-grid" style="margin-top:6px;">
+      <div class="feature-item">All types of Radler chain available by order</div>
+      <div class="feature-item">Suitable for new and old plant fitting and servicing</div>
+      <div class="feature-item">En-masse bulk conveying — no dusting or segregation</div>
+      <div class="feature-item">Enclosed trough design — clean dust-free operation</div>
+      <div class="feature-item">Heavy-duty alloy steel chain links for long life</div>
+      <div class="feature-item">Horizontal, vertical, and angular conveying capability</div>
+    </div>
+
+    <div class="section-title">Technical Specifications</div>
+    <table class="specs-table">
+      <thead><tr><th>Specification</th><th>Value</th></tr></thead>
+      <tbody>
+        <tr><td>Type</td><td>Radler / Redler En-Masse Chain Conveyor</td></tr>
+        <tr><td>Chain Material</td><td>Alloy Steel / Hardened Steel</td></tr>
+        <tr><td>Capacity</td><td>1 to 30 Tons per Hour</td></tr>
+        <tr><td>Directions</td><td>Horizontal / Inclined / Vertical / Z-type</td></tr>
+        <tr><td>Trough</td><td>MS / SS enclosed trough with cover</td></tr>
+        <tr><td>Drive</td><td>Geared motor — direct or belt drive</td></tr>
+      </tbody>
+    </table>
+
+    <div class="applications-bar">
+      <strong>Applications:</strong>
+      Oilseed feeding to expellers, oil cake and meal handling, flour mills, grain processing, bulk material internal conveying in factories and agro-processing silos.
+    </div>
+
+    <div class="cta-bar">
+      <div class="cta-btn cta-primary">GET BEST PRICE &#8594;</div>
+      <div class="cta-btn cta-phone">&#128222; +91 88666 88626</div>
+      <div class="cta-btn cta-whatsapp">&#128172; WhatsApp: +91 88666 88626</div>
+    </div>
+  </div>
+
+  <div class="page-footer">
+    <span class="ft-text">© 2025 National Machinery Stores &nbsp;·&nbsp; 12, Someshwar Complex, Nandasan Highway Road, Kadi, Mahesana GIDC – 382715, Gujarat, India</span>
+    <span class="ft-page">Page 10 / 14</span>
+  </div>
+</div><!-- /PAGE 10 -->
+
+<!-- ============================================================
+     PAGE 11 — OIL EXPELLER SPARE PARTS
+============================================================ -->
+<div class="page">
+  <div class="page-header">
+    <div class="hdr-left">
+      <div class="nm-box nm-box-sm">NM</div>
+      <div class="hdr-company">
+        <span class="name">NATIONAL MACHINERY STORES</span>
+        <span class="sub">PRODUCT CATALOGUE &nbsp;·&nbsp; 2025–2026 EDITION &nbsp;·&nbsp; KADI, MAHESANA GIDC</span>
+      </div>
+    </div>
+    <div class="hdr-right">
+      <div class="phone">+91 88666 88626</div>
+      <div class="web">nationalmachinerystores.com</div>
+    </div>
+  </div>
+
+  <div class="page-body" style="position:relative;">
+    <div class="product-watermark">09</div>
+    <div class="product-number-label">PRODUCT 09</div>
+    <div class="product-title">Oil Expeller Spare Parts</div>
+    <div class="product-tagline">All Parts for All Indian Oil Expeller Brands — Fast Dispatch, No Minimum Order</div>
+    <div class="badge-bar">
+      <span class="badge badge-amber">24–48 HR DISPATCH</span>
+      <span class="badge badge-green">IN STOCK</span>
+      <span class="badge badge-navy">NO MIN. ORDER</span>
+    </div>
+
+    <div class="product-cols">
+      <div>
+        <img class="product-img" src="https://img3.exportersindia.com/product_images/bc-full/2023/9/4655927/oil-expeller-spare-parts-1502531525-3217866.jpg" alt="Oil Expeller Spare Parts" />
+      </div>
+      <div class="product-desc">
+        All types of expeller parts available: gear, main shaft, worm assembly, cage bar set, pressing D.O. collar, taper collar — all sizes available by order. Critical parts stocked to ensure minimum mill downtime. Compatible with all major Indian oil expeller brands. No minimum order — even a single part dispatched.
+      </div>
+    </div>
+
+    <div class="section-title">Key Features</div>
+    <div class="features-grid" style="margin-top:6px;">
+      <div class="feature-item">Gear, main shaft, worm assembly — all sizes stocked</div>
+      <div class="feature-item">Cage bar sets and pressing D.O. collars</div>
+      <div class="feature-item">Taper collar, bearing housing and taper bearings</div>
+      <div class="feature-item">Gearbox components, oil seals and gaskets</div>
+      <div class="feature-item">Filter cloths and filter press plate components</div>
+      <div class="feature-item">Compatible with all major Indian expeller brands</div>
+    </div>
+
+    <div class="section-title">Technical Specifications</div>
+    <table class="specs-table">
+      <thead><tr><th>Specification</th><th>Value</th></tr></thead>
+      <tbody>
+        <tr><td>Compatibility</td><td>All major Indian oil expeller brands</td></tr>
+        <tr><td>Part Types</td><td>Worm, Shaft, Barrel, Cage, Bearing, Gearbox, Seals</td></tr>
+        <tr><td>Material</td><td>Alloy Steel / Cast Iron / High-Grade MS</td></tr>
+        <tr><td>Dispatch</td><td>24–48 Hours for stocked items</td></tr>
+        <tr><td>Warranty</td><td>3–6 Months on all parts supplied</td></tr>
+        <tr><td>Min. Order</td><td>None — single part orders accepted</td></tr>
+      </tbody>
+    </table>
+
+    <div class="applications-bar">
+      <strong>Applications:</strong>
+      Maintenance and breakdown repair for all oil expellers and oil mill machinery — from mini expellers to large industrial plants. Stocked for fast dispatch to minimize costly downtime.
+    </div>
+
+    <div class="cta-bar">
+      <div class="cta-btn cta-primary">GET BEST PRICE &#8594;</div>
+      <div class="cta-btn cta-phone">&#128222; +91 88666 88626</div>
+      <div class="cta-btn cta-whatsapp">&#128172; WhatsApp: +91 88666 88626</div>
+    </div>
+  </div>
+
+  <div class="page-footer">
+    <span class="ft-text">© 2025 National Machinery Stores &nbsp;·&nbsp; 12, Someshwar Complex, Nandasan Highway Road, Kadi, Mahesana GIDC – 382715, Gujarat, India</span>
+    <span class="ft-page">Page 11 / 14</span>
+  </div>
+</div><!-- /PAGE 11 -->
+
+<!-- ============================================================
+     PAGE 12 — OIL MILL MACHINERY
+============================================================ -->
+<div class="page">
+  <div class="page-header">
+    <div class="hdr-left">
+      <div class="nm-box nm-box-sm">NM</div>
+      <div class="hdr-company">
+        <span class="name">NATIONAL MACHINERY STORES</span>
+        <span class="sub">PRODUCT CATALOGUE &nbsp;·&nbsp; 2025–2026 EDITION &nbsp;·&nbsp; KADI, MAHESANA GIDC</span>
+      </div>
+    </div>
+    <div class="hdr-right">
+      <div class="phone">+91 88666 88626</div>
+      <div class="web">nationalmachinerystores.com</div>
+    </div>
+  </div>
+
+  <div class="page-body" style="position:relative;">
+    <div class="product-watermark">10</div>
+    <div class="product-number-label">PRODUCT 10</div>
+    <div class="product-title">Oil Mill Machinery</div>
+    <div class="product-tagline">Complete Plant Machinery — Seed Cleaning to Oil Storage, New &amp; Refurbished</div>
+    <div class="badge-bar">
+      <span class="badge badge-navy">COMPLETE PLANT</span>
+      <span class="badge badge-amber">NEW &amp; USED</span>
+      <span class="badge badge-navy">2–100+ TONS/DAY</span>
+    </div>
+
+    <div class="product-cols">
+      <div>
+        <img class="product-img" src="https://img3.exportersindia.com/product_images/bc-full/2023/9/4655927/oil-mill-machinery-1501756390-3191157.jpg" alt="Oil Mill Machinery" />
+      </div>
+      <div class="product-desc">
+        Complete oil mill machinery for all stages — from seed cleaning and pre-processing to oil extraction, filtration, and storage. Available as individual machines or complete plant packages in both new and refurbished condition. Supply, installation, and commissioning all covered.
+      </div>
+    </div>
+
+    <div class="section-title">Key Features</div>
+    <div class="features-grid" style="margin-top:6px;">
+      <div class="feature-item">Productivity range: 2 to 100+ Tons per Day</div>
+      <div class="feature-item">Seed cleaning and pre-processing equipment</div>
+      <div class="feature-item">Oil expeller and pressing section</div>
+      <div class="feature-item">Filter press and oil clarification stage</div>
+      <div class="feature-item">Storage tanks, pumps, and interconnecting piping</div>
+      <div class="feature-item">New machinery and inspected refurbished options</div>
+    </div>
+
+    <div class="section-title">Technical Specifications</div>
+    <table class="specs-table">
+      <thead><tr><th>Specification</th><th>Value</th></tr></thead>
+      <tbody>
+        <tr><td>Capacity</td><td>2 to 100+ Tons per Day</td></tr>
+        <tr><td>Seed Types</td><td>All edible oilseeds</td></tr>
+        <tr><td>Condition</td><td>New / Used / Refurbished</td></tr>
+        <tr><td>Supply</td><td>Individual machines or complete plant</td></tr>
+        <tr><td>Brands</td><td>All major Indian oil mill machinery manufacturers</td></tr>
+        <tr><td>Service</td><td>Supply + Installation + Commissioning</td></tr>
+      </tbody>
+    </table>
+
+    <div class="applications-bar">
+      <strong>Applications:</strong>
+      New oil mill setup, plant modernization and expansion, factory capacity upgrade, export-quality edible oil production, cooperative oil processing societies.
+    </div>
+
+    <div class="cta-bar">
+      <div class="cta-btn cta-primary">GET BEST PRICE &#8594;</div>
+      <div class="cta-btn cta-phone">&#128222; +91 88666 88626</div>
+      <div class="cta-btn cta-whatsapp">&#128172; WhatsApp: +91 88666 88626</div>
+    </div>
+  </div>
+
+  <div class="page-footer">
+    <span class="ft-text">© 2025 National Machinery Stores &nbsp;·&nbsp; 12, Someshwar Complex, Nandasan Highway Road, Kadi, Mahesana GIDC – 382715, Gujarat, India</span>
+    <span class="ft-page">Page 12 / 14</span>
+  </div>
+</div><!-- /PAGE 12 -->
+
+<!-- ============================================================
+     PAGE 13 — OIL MILL ERECTOR, DEMOLITION & TOTAL SERVICE
+============================================================ -->
+<div class="page">
+  <div class="page-header">
+    <div class="hdr-left">
+      <div class="nm-box nm-box-sm">NM</div>
+      <div class="hdr-company">
+        <span class="name">NATIONAL MACHINERY STORES</span>
+        <span class="sub">PRODUCT CATALOGUE &nbsp;·&nbsp; 2025–2026 EDITION &nbsp;·&nbsp; KADI, MAHESANA GIDC</span>
+      </div>
+    </div>
+    <div class="hdr-right">
+      <div class="phone">+91 88666 88626</div>
+      <div class="web">nationalmachinerystores.com</div>
+    </div>
+  </div>
+
+  <div class="page-body" style="position:relative;">
+    <div class="product-watermark">11</div>
+    <div class="product-number-label">PRODUCT 11</div>
+    <div class="product-title">Oil Mill Erector, Demolition &amp; Total Service Contract</div>
+    <div class="product-tagline">Turnkey Lifecycle Service — New Plant Erection to Annual Maintenance Contracts</div>
+    <div class="badge-bar">
+      <span class="badge badge-amber">TURNKEY SERVICE</span>
+      <span class="badge badge-navy">AMC AVAILABLE</span>
+      <span class="badge badge-navy">PAN INDIA</span>
+    </div>
+
+    <div class="product-cols">
+      <div>
+        <img class="product-img" src="https://img3.exportersindia.com/product_images/bc-full/2023/9/4655927/oil-mill-erector-demolition-total-service-1502535100-3218048.jpg" alt="Oil Mill Erector and Service" />
+      </div>
+      <div class="product-desc">
+        Complete oil mill lifecycle service — new plant erection, re-erection, relocation, and demolition. Covers civil guidance, machine installation, alignment, commissioning, operator training, and Annual Maintenance Contracts (AMC). Ideal for new entrepreneurs starting their first oil mill or established mills requiring expert ongoing maintenance support.
+      </div>
+    </div>
+
+    <div class="section-title">Key Features</div>
+    <div class="features-grid" style="margin-top:6px;">
+      <div class="feature-item">New oil mill erection from foundation to commissioned plant</div>
+      <div class="feature-item">Re-erection, relocation, and demolition services</div>
+      <div class="feature-item">Civil guidance during the construction phase</div>
+      <div class="feature-item">Machine installation, alignment, and commissioning</div>
+      <div class="feature-item">Operator training included on plant handover</div>
+      <div class="feature-item">Annual Maintenance Contracts (AMC) available</div>
+    </div>
+
+    <div class="section-title">Technical Specifications</div>
+    <table class="specs-table">
+      <thead><tr><th>Specification</th><th>Value</th></tr></thead>
+      <tbody>
+        <tr><td>Service Types</td><td>Erection / Re-erection / Demolition / AMC</td></tr>
+        <tr><td>Scope</td><td>Civil guidance, install, commissioning, training</td></tr>
+        <tr><td>Plant Scale</td><td>Mini (1–5 T/day) to Industrial (50+ T/day)</td></tr>
+        <tr><td>Timeline</td><td>2–10 weeks depending on plant size</td></tr>
+        <tr><td>AMC</td><td>Scheduled service visits — annual contract</td></tr>
+        <tr><td>Coverage</td><td>PAN India — site visits available</td></tr>
+      </tbody>
+    </table>
+
+    <div class="applications-bar">
+      <strong>Applications:</strong>
+      New oil mill entrepreneurs, plant expansion projects, factory relocation, plant modernization and upgrades, Annual Maintenance Contracts for existing oil mills across India.
+    </div>
+
+    <div class="cta-bar">
+      <div class="cta-btn cta-primary">GET BEST PRICE &#8594;</div>
+      <div class="cta-btn cta-phone">&#128222; +91 88666 88626</div>
+      <div class="cta-btn cta-whatsapp">&#128172; WhatsApp: +91 88666 88626</div>
+    </div>
+  </div>
+
+  <div class="page-footer">
+    <span class="ft-text">© 2025 National Machinery Stores &nbsp;·&nbsp; 12, Someshwar Complex, Nandasan Highway Road, Kadi, Mahesana GIDC – 382715, Gujarat, India</span>
+    <span class="ft-page">Page 13 / 14</span>
+  </div>
+</div><!-- /PAGE 13 -->
+
+<!-- ============================================================
+     PAGE 14 — BACK / THANK YOU
+============================================================ -->
+<div class="page">
+  <div class="page-header">
+    <div class="hdr-left">
+      <div class="nm-box nm-box-sm">NM</div>
+      <div class="hdr-company">
+        <span class="name">NATIONAL MACHINERY STORES</span>
+        <span class="sub">PRODUCT CATALOGUE &nbsp;·&nbsp; 2025–2026 EDITION &nbsp;·&nbsp; KADI, MAHESANA GIDC</span>
+      </div>
+    </div>
+    <div class="hdr-right">
+      <div class="phone">+91 88666 88626</div>
+      <div class="web">nationalmachinerystores.com</div>
+    </div>
+  </div>
+
+  <!-- Back cover hero -->
+  <div class="back-hero">
+    <div class="deco1"></div>
+    <div class="deco2"></div>
+    <h2>Get In Touch With Us</h2>
+    <p>For pricing, availability, and expert advice on any product in this catalogue, contact <strong style="color:var(--amber);">Iqbalhusen Chisti</strong> directly. We respond to all inquiries within <strong style="color:var(--amber);">24–48 hours</strong>. Our team speaks Hindi, Gujarati &amp; English. GST invoicing available for all orders.</p>
+  </div>
+
+  <!-- NM identity row -->
+  <div class="back-nm-row">
+    <div class="nm-box" style="width:42px;height:42px;font-size:20px;">NM</div>
+    <div>
+      <div class="bn-company">NATIONAL MACHINERY STORES</div>
+      <div class="bn-tagline">KADI &nbsp;·&nbsp; MAHESANA GIDC &nbsp;·&nbsp; EST. 1998 &nbsp;·&nbsp; GUJARAT, INDIA</div>
+    </div>
+  </div>
+
+  <!-- Info cards -->
+  <div class="back-info-cards">
+    <div class="back-card">
+      <div class="bc-icon">&#128222;</div>
+      <div class="bc-label">Call / WhatsApp</div>
+      <p>
+        <strong>Iqbalhusen Chisti</strong><br />
+        Founder &amp; Proprietor<br /><br />
+        <strong>+91 88666 88626</strong><br />
+        Available: Hindi, Gujarati &amp; English<br />
+        Response time: 24–48 hours<br /><br />
+        <strong>nationalmachinerystores.com</strong>
+      </p>
+    </div>
+    <div class="back-card">
+      <div class="bc-icon">&#127970;</div>
+      <div class="bc-label">Office Address</div>
+      <p>
+        <strong>12, Someshwar Complex</strong><br />
+        Nandasan Highway Road<br />
+        Kadi, Mahesana GIDC<br />
+        – 382715<br />
+        Gujarat, India
+      </p>
+    </div>
+    <div class="back-card">
+      <div class="bc-icon">&#127981;</div>
+      <div class="bc-label">Factory Address</div>
+      <p>
+        <strong>Kadi Nandasan Road</strong><br />
+        Opp. Ultratech RMC Plant<br />
+        Survey No. 91<br />
+        At: Kundal (Kadi)<br />
+        Dist: Mehsana – 382715, Gujarat
+      </p>
+    </div>
+  </div>
+
+  <!-- Tagline bar -->
+  <div class="back-tagline">
+    Direct Manufacturer Pricing &nbsp;·&nbsp; PAN India Delivery &nbsp;·&nbsp; GST Billing &nbsp;·&nbsp; New &amp; Used Machinery &nbsp;·&nbsp; Licensed Exporter — Africa &amp; International
+  </div>
+
+  <!-- Stats bar -->
+  <div class="back-stats">
+    Est. 1998 &nbsp;·&nbsp; 2000+ Clients &nbsp;·&nbsp; 18+ States &nbsp;·&nbsp; 25+ Years Experience &nbsp;·&nbsp; 2025–2026 Edition
+  </div>
+
+  <div class="page-footer">
+    <span class="ft-text">© 2025 National Machinery Stores &nbsp;·&nbsp; 12, Someshwar Complex, Nandasan Highway Road, Kadi, Mahesana GIDC – 382715, Gujarat, India</span>
+    <span class="ft-page">Page 14 / 14</span>
+  </div>
+</div><!-- /PAGE 14 -->
+
+</body>
+</html>
