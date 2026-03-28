@@ -32,7 +32,8 @@
     .fm{font-family:'Barlow',sans-serif}
 
     /* NAV */
-    #navbar{position:fixed;top:0;left:0;width:100%;z-index:999;transition:background .3s,box-shadow .3s}
+    #site-header{position:fixed;top:0;left:0;width:100%;z-index:999}
+    #navbar{transition:background .3s,box-shadow .3s}
     #navbar.scrolled{background:var(--navy)!important;box-shadow:0 2px 20px rgba(0,0,0,.4)}
     .nl{font-family:'Barlow',sans-serif;font-weight:500;font-size:.82rem;letter-spacing:.06em;text-transform:uppercase;color:#fff;text-decoration:none;padding:4px 0;border-bottom:2px solid transparent;transition:color .2s,border-color .2s}
     .nl:hover{color:var(--amber);border-bottom-color:var(--amber)}
@@ -145,6 +146,7 @@
 <!-- ══════════════════════════════════════════
      URGENCY BAR
 ══════════════════════════════════════════ -->
+<header id="site-header">
 <div style="background:var(--amber)" class="py-2 px-4 text-center">
   <p class="fm text-sm font-semibold" style="color:#0d1f3c">
     🔥 Limited Stock Available &nbsp;|&nbsp; Direct Manufacturer Pricing &nbsp;|&nbsp; PAN India Delivery &nbsp;|&nbsp;
@@ -155,7 +157,7 @@
 <!-- ══════════════════════════════════════════
      NAVBAR
 ══════════════════════════════════════════ -->
-<nav id="navbar" class="py-3" style="background:rgba(13,31,60,0)">
+<nav id="navbar" class="py-3" style="background:var(--navy)">
   <div class="max-w-7xl mx-auto px-5 flex items-center justify-between gap-4">
 
     <a href="#home" class="flex items-center gap-3 no-underline flex-shrink-0">
@@ -198,11 +200,12 @@
     </div>
   </div>
 </nav>
+</header>
 
 <!-- ══════════════════════════════════════════
      HERO
 ══════════════════════════════════════════ -->
-<section id="home" class="hero-bg relative min-h-screen flex items-center" style="padding-top:88px">
+<section id="home" class="hero-bg relative min-h-screen flex items-center" style="padding-top:108px">
   <div class="max-w-7xl mx-auto px-5 py-20 w-full relative z-10">
     <div class="max-w-3xl">
 
