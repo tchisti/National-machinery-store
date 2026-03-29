@@ -557,7 +557,7 @@
           </div>
           <div>
             <label class="fm text-xs font-bold uppercase tracking-wider mb-1 block" style="color:var(--muted)">Product Required *</label>
-            <select class="fi-input fsel" required>
+            <select class="fi-input fsel" required onchange="toggleOther(this,'other1')">
               <option value="">Select Product</option>
               <option>Mini Oil Expeller</option>
               <option>High Capacity Oil Expeller</option>
@@ -571,7 +571,9 @@
               <option>Oil Mill Machinery</option>
               <option>Oil Mill Erector / Service Contract</option>
               <option>Used / Second-hand Machinery</option>
+              <option value="Other">Other — Please specify below</option>
             </select>
+            <input type="text" id="other1" class="fi-input" placeholder="Tell us what you are looking for..." style="display:none;margin-top:8px"/>
           </div>
           <div>
             <label class="fm text-xs font-bold uppercase tracking-wider mb-1 block" style="color:var(--muted)">Message</label>
@@ -905,7 +907,7 @@
           <div class="grid sm:grid-cols-2 gap-4">
             <div>
               <label class="fm text-xs font-bold uppercase tracking-wider mb-1 block" style="color:var(--muted)">Product Required *</label>
-              <select class="fi-input fsel" required>
+              <select class="fi-input fsel" required onchange="toggleOther(this,'other2')">
                 <option value="">Select Product / Service</option>
                 <option>Mini Oil Expeller</option>
                 <option>High Capacity Oil Expeller</option>
@@ -921,7 +923,9 @@
                 <option>Used / Refurbished Machinery</option>
                 <option>Sell My Machinery (Commission Agent)</option>
                 <option>AMC – Annual Maintenance Contract</option>
+                <option value="Other">Other — Please specify below</option>
               </select>
+              <input type="text" id="other2" class="fi-input" placeholder="Tell us what you are looking for..." style="display:none;margin-top:8px"/>
             </div>
             <div><label class="fm text-xs font-bold uppercase tracking-wider mb-1 block" style="color:var(--muted)">City &amp; State *</label><input type="text" class="fi-input" placeholder="e.g. Ahmedabad, Gujarat" required/></div>
           </div>
@@ -1051,6 +1055,11 @@ window.addEventListener('scroll',()=>{
 
 /* ── Mobile menu ── */
 function toggleMob(){document.getElementById('mob').classList.toggle('open')}
+function toggleOther(sel,inputId){
+  const inp=document.getElementById(inputId);
+  if(sel.value==='Other'){inp.style.display='block';inp.required=true;}
+  else{inp.style.display='none';inp.required=false;inp.value='';}
+}
 
 /* ── Scroll reveal ── */
 const obs=new IntersectionObserver(entries=>{
@@ -1064,7 +1073,11 @@ function submitForm(e){
   const f=e.target;
   const name=f.querySelector('[type="text"]')?.value||'';
   const phone=f.querySelector('[type="tel"]')?.value||'';
-  const product=f.querySelector('select')?.value||'Not specified';
+  const sel=f.querySelector('select');
+  const otherInp=f.querySelector('input[id^="other"]');
+  const product=(sel?.value==='Other'&&otherInp?.value.trim())
+    ?'Other: '+otherInp.value.trim()
+    :sel?.value||'Not specified';
   const msg=encodeURIComponent(
     'Hello National Machinery Stores,\n\n' +
     'Name: '+name+'\nPhone: '+phone+'\nProduct: '+product+'\n\n' +
