@@ -106,6 +106,15 @@
     .mo{position:absolute;inset:0;background:rgba(10,22,40,.82);backdrop-filter:blur(5px)}
     .mb-box{position:relative;z-index:1;background:#fff;border-radius:14px;max-width:740px;width:calc(100% - 32px);max-height:92vh;overflow-y:auto;box-shadow:0 32px 80px rgba(0,0,0,.4)}
     .mi{width:100%;height:220px;object-fit:cover}
+    .crs{position:relative;overflow:hidden;height:280px;background:#0d1f3c}
+    .crs-track{display:flex;height:100%;transition:transform .38s cubic-bezier(.4,0,.2,1)}
+    .crs-slide{min-width:100%;height:100%;object-fit:cover;flex-shrink:0}
+    .crs-btn{position:absolute;top:50%;transform:translateY(-50%);background:rgba(0,0,0,.45);border:none;color:#fff;width:38px;height:38px;border-radius:50%;cursor:pointer;font-size:1.4rem;line-height:1;z-index:5;display:flex;align-items:center;justify-content:center;transition:background .2s}
+    .crs-btn:hover{background:rgba(0,0,0,.72)}
+    .crs-prev{left:10px}.crs-next{right:10px}
+    .crs-dots{position:absolute;bottom:10px;left:50%;transform:translateX(-50%);display:flex;gap:7px;z-index:5}
+    .crs-dot{width:9px;height:9px;border-radius:50%;background:rgba(255,255,255,.38);cursor:pointer;border:none;padding:0;transition:background .2s}
+    .crs-dot.active{background:var(--amber)}
     .mc{padding:28px 30px 30px}
     .mclose{position:absolute;top:12px;right:12px;width:34px;height:34px;border-radius:50%;background:rgba(0,0,0,.55);border:none;cursor:pointer;color:#fff;font-size:1.1rem;display:flex;align-items:center;justify-content:center;z-index:2;transition:background .2s}
     .mclose:hover{background:rgba(0,0,0,.75)}
@@ -1198,8 +1207,9 @@ const PRODUCTS={
     title:'Casting Oil Filter',
     badge:'Fast Dispatch',
     badgeClass:'pb-am',
-    img:'https://img3.exportersindia.com/product_images/bc-full/2023/9/4655927/casting-oil-filter-1502530826-3217832.jpg',
-    imgAlt:'Casting Oil Filter Press Mahesana Gujarat',
+    img:'images/cof-1.jpg',
+    imgAlt:'Casting Oil Filter Press — National Machinery Stores Kadi',
+    gallery:['images/cof-1.jpg','images/cof-2.jpg','images/cof-3.jpg','images/cof-4.jpg','images/cof-5.jpg'],
     desc:'Traditional heavy-duty cast iron filter press for edible oil clarification. Removes suspended impurities, waxes, and fine particles from crude pressed oil. Long-lasting construction designed for continuous high-volume oil processing.',
     features:[
       'Heavy-duty cast iron frame and plates for maximum durability',
@@ -1371,12 +1381,30 @@ const PRODUCTS={
   }
 };
 
+let _cIdx=0,_cLen=0,_cTimer=null;
+function crsInit(len){_cIdx=0;_cLen=len;if(_cTimer)clearInterval(_cTimer);_cTimer=setInterval(()=>crsMove(1),4500);}
+function crsMove(d){_cIdx=(_cIdx+d+_cLen)%_cLen;crsUpdate();}
+function crsGo(i){_cIdx=i;crsUpdate();}
+function crsUpdate(){
+  const t=document.getElementById('crs-track');
+  if(t)t.style.transform='translateX(-'+(_cIdx*100)+'%)';
+  document.querySelectorAll('.crs-dot').forEach((d,i)=>d.classList.toggle('active',i===_cIdx));
+}
+
 function openModal(key){
   const p=PRODUCTS[key];
   if(!p)return;
   const mc=document.getElementById('mc');
+  const imgBlock=p.gallery
+    ?`<div class="crs" id="crs">
+        <div class="crs-track" id="crs-track">${p.gallery.map(s=>`<img src="${s}" class="crs-slide" alt="${p.imgAlt}" loading="lazy">`).join('')}</div>
+        <button class="crs-btn crs-prev" onclick="crsMove(-1)">&#8249;</button>
+        <button class="crs-btn crs-next" onclick="crsMove(1)">&#8250;</button>
+        <div class="crs-dots">${p.gallery.map((_,i)=>`<button class="crs-dot${i===0?' active':''}" onclick="crsGo(${i})"></button>`).join('')}</div>
+      </div>`
+    :`<img src="${p.img}" alt="${p.imgAlt}" class="mi" onerror="this.style.display='none'"/>`;
   mc.innerHTML=`
-    <img src="${p.img}" alt="${p.imgAlt}" class="mi" onerror="this.style.display='none'"/>
+    ${imgBlock}
     <div class="mc">
       <div class="flex items-start justify-between gap-3 mb-4">
         <div>
@@ -1410,11 +1438,13 @@ function openModal(key){
   `;
   document.getElementById('pm').classList.add('open');
   document.body.style.overflow='hidden';
+  if(p.gallery)crsInit(p.gallery.length);
 }
 
 function closeModal(){
   document.getElementById('pm').classList.remove('open');
   document.body.style.overflow='';
+  if(_cTimer){clearInterval(_cTimer);_cTimer=null;}
 }
 
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
