@@ -1,0 +1,13 @@
+{
+  "name": "National Machinery Stores",
+  "short_name": "NMS Kadi",
+  "description": "Oil mill machinery, oil expellers and spare parts — Kadi, Gujarat.",
+  "start_url": "./",
+  "display": "browser",
+  "background_color": "#111315",
+  "theme_color": "#111315",
+  "icons": [
+    { "src": "images/brand/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "images/brand/logo-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
