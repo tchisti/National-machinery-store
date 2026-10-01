@@ -1,0 +1,49 @@
+{
+  "name": "National Machinery Stores",
+  "shortName": "NMS",
+  "baseUrl": "https://nationalmachinerystores.com",
+  "founded": "1998",
+  "founder": "Iqbalhusen Chisti",
+  "updated": "2026-10-01",
+  "updatedLabel": "October 2026",
+  "phone": "+919426701635",
+  "phoneDisplay": "+91 94267 01635",
+  "whatsapp": "918866688626",
+  "whatsappDisplay": "+91 88666 88626",
+  "hours": "Mon–Sat, 9:00 AM – 7:00 PM IST",
+  "hoursSchema": "Mo-Sa 09:00-19:00",
+  "languages": ["Hindi", "Gujarati", "English"],
+  "callback": "24–48 hours",
+  "stats": {
+    "years": "25+",
+    "clients": "10,000+",
+    "states": "18+",
+    "products": "11",
+    "spares": "24–48 h"
+  },
+  "office": {
+    "label": "Office",
+    "lines": ["12, Someshwar Complex", "Nandasan Highway Road", "Kadi, Mahesana – 382715", "Gujarat, India"],
+    "street": "12, Someshwar Complex, Nandasan Highway Road",
+    "locality": "Kadi",
+    "region": "Gujarat",
+    "district": "Mahesana",
+    "postalCode": "382715",
+    "map": "https://maps.app.goo.gl/qNyq7Abf3dqh4Upk6",
+    "lat": 23.3152919,
+    "lng": 72.3431149
+  },
+  "factory": {
+    "label": "Factory & warehouse",
+    "lines": ["Kadi Nandasan Road, Opp. Ultratech RMC Plant", "Survey No. 91, At: Kundal (Kadi)", "Dist: Mehsana – 382715", "Gujarat, India"],
+    "street": "Kadi Nandasan Road, Opp. Ultratech RMC Plant, Survey No. 91, Kundal",
+    "locality": "Kadi",
+    "region": "Gujarat",
+    "postalCode": "382715",
+    "map": "https://maps.app.goo.gl/KRnviLk4poASXEFR6"
+  },
+  "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d918.5!2d72.3431149!3d23.3152919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395c3d4d7e517697%3A0xc74882afbbc8e223!2sNATIONAL+MACHINERY+STORES!5e0!3m2!1sen!2sin!4v1743000000000!5m2!1sen!2sin",
+  "areaServed": ["India", "Africa"],
+  "testimonials_README": "Add only real client quotes, used with the client's permission. Each item: {\"quote\": \"...\", \"name\": \"...\", \"role\": \"...\", \"place\": \"...\", \"since\": \"...\"}. The testimonials section stays hidden while this list is empty.",
+  "testimonials": []
+}

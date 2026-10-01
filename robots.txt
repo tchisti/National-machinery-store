@@ -1,0 +1,26 @@
+# National Machinery Stores — all crawlers welcome, including AI answer engines.
+User-agent: *
+Allow: /
+
+# Explicitly allow AI search / answer crawlers so ChatGPT, Perplexity, Claude,
+# Gemini and Copilot can read and cite our product pages.
+User-agent: GPTBot
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: Claude-SearchBot
+Allow: /
+User-agent: anthropic-ai
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: Bingbot
+Allow: /
+
+Sitemap: https://nationalmachinerystores.com/sitemap.xml

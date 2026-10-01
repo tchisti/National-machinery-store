@@ -1,0 +1,900 @@
+{
+  "stages": [
+    {
+      "id": "convey",
+      "num": "01",
+      "name": "Convey",
+      "verb": "Move seed & cake",
+      "text": "Feed seed into the press and carry cake away — without breakage, dust or manual handling."
+    },
+    {
+      "id": "press",
+      "num": "02",
+      "name": "Press",
+      "verb": "Expel the oil",
+      "text": "Screw-press expellers from 1 tonne a day to 50+ tonnes a day, new or refurbished."
+    },
+    {
+      "id": "filter",
+      "num": "03",
+      "name": "Filter",
+      "verb": "Clarify crude oil",
+      "text": "Filter presses strip suspended solids, wax and fines from freshly pressed oil."
+    },
+    {
+      "id": "refine",
+      "num": "04",
+      "name": "Refine",
+      "verb": "Neutralise FFA",
+      "text": "Alkali neutralisation removes free fatty acids for market-grade refined oil."
+    },
+    {
+      "id": "sustain",
+      "num": "05",
+      "name": "Build & sustain",
+      "verb": "Erect, maintain, supply",
+      "text": "Complete plants, erection, AMC and spare parts that keep the line running."
+    }
+  ],
+  "products": [
+    {
+      "slug": "mini-oil-expeller",
+      "name": "Mini Oil Expeller",
+      "stage": "press",
+      "badge": "Best seller",
+      "short": "Compact screw-press expeller for small mills and start-ups. Low power, simple to run, all common oilseeds.",
+      "keySpecs": [
+        "1–5 TPD",
+        "3–15 HP"
+      ],
+      "keyLabels": [
+        "Capacity",
+        "Drive"
+      ],
+      "seoTitle": "Mini Oil Expeller (1–5 TPD) Supplier in Kadi, Gujarat",
+      "metaDesc": "Mini oil expeller, 1–5 tonnes/day on 3–15 HP, for groundnut, mustard, sesame, sunflower & coconut. New and refurbished, GST billing, PAN India delivery from Kadi.",
+      "summary": "A mini oil expeller is a compact screw press that crushes 1 to 5 tonnes of oilseed per day on a 3–15 HP drive. National Machinery Stores supplies new and refurbished mini expellers from Kadi, Gujarat, for groundnut, mustard, sesame, sunflower and coconut — sized for village-level units, farm processing and first-time mill owners.",
+      "desc": "High-efficiency mini oil expeller designed for small-scale oil mills. Features low power consumption, simple operation, and easy maintenance. Suitable for all types of oilseeds including groundnut, mustard, sesame, sunflower, and more.",
+      "features": [
+        "High oil extraction efficiency with low residue in cake",
+        "Compact design — ideal for small oil mills and startups",
+        "Low power consumption, easy to operate",
+        "Compatible with groundnut, mustard, sesame, sunflower, coconut",
+        "Durable construction with cast iron and alloy steel parts",
+        "Low noise, minimal vibration design"
+      ],
+      "specs": [
+        [
+          "Capacity",
+          "1 to 5 Tons per Day (seed input)"
+        ],
+        [
+          "Power Required",
+          "3 HP to 15 HP (model dependent)"
+        ],
+        [
+          "Oil Yield",
+          "Up to 98% extraction efficiency"
+        ],
+        [
+          "Material",
+          "Cast Iron / MS / Alloy Steel"
+        ],
+        [
+          "Operation",
+          "Manual / Semi-Automatic"
+        ],
+        [
+          "Warranty",
+          "1 Year (New) | 3–6 Months (Refurbished)"
+        ]
+      ],
+      "apps": "Small oil mills, home-based oil extraction, village-level oil processing, startup edible oil ventures, farm-level groundnut & sesame oil production.",
+      "images": [
+        {
+          "src": "mini-oil-expeller.webp",
+          "w": 789,
+          "h": 600,
+          "fit": "cover",
+          "alt": "Green mini oil expeller with motor and pulley drive at National Machinery Stores, Kadi"
+        }
+      ],
+      "faq": [
+        "new-used",
+        "expeller-size",
+        "deliver"
+      ]
+    },
+    {
+      "slug": "high-capacity-oil-expeller",
+      "name": "High Capacity Oil Expeller",
+      "stage": "press",
+      "badge": "Industrial",
+      "short": "Industrial screw press for continuous 24-hour crushing. Heavy-duty worm shaft, barrel and gearbox.",
+      "keySpecs": [
+        "5–50+ TPD",
+        "20–75 HP"
+      ],
+      "keyLabels": [
+        "Capacity",
+        "Drive"
+      ],
+      "seoTitle": "High Capacity Oil Expeller (5–50+ TPD) | Kadi, Gujarat",
+      "metaDesc": "Industrial high capacity oil expeller, 5–50+ tonnes/day on 20–75 HP, built for continuous 24-hour crushing. New and refurbished, GST billing, PAN India delivery.",
+      "summary": "A high capacity oil expeller is an industrial screw press built for continuous, 24-hour crushing of 5 to 50+ tonnes of oilseed per day on 20–75 HP drives. We supply new and inspected refurbished units with heavy-duty worm shafts, pressing barrels and precision-cut gearboxes for commercial edible-oil plants.",
+      "desc": "Industrial-grade high capacity oil expeller built for large-scale continuous production. Features high structural strength, heavy-duty components, and reliable performance suited for commercial oil plants processing multiple tons per day.",
+      "features": [
+        "High structural strength — designed for continuous 24-hr operations",
+        "Heavy-duty worm shaft and pressing barrel for long service life",
+        "High oil recovery rate with low residual oil in cake",
+        "Suitable for all commercial oilseeds at high throughput",
+        "Robust gearbox with precision-cut gears",
+        "Easy access for maintenance and part replacement"
+      ],
+      "specs": [
+        [
+          "Capacity",
+          "5 to 50+ Tons per Day"
+        ],
+        [
+          "Power Required",
+          "20 HP to 75 HP (model dependent)"
+        ],
+        [
+          "Oil Yield",
+          "Up to 98% extraction efficiency"
+        ],
+        [
+          "Material",
+          "Heavy-duty Cast Iron / Alloy Steel"
+        ],
+        [
+          "Operation",
+          "Fully Automatic / Semi-Automatic"
+        ],
+        [
+          "Warranty",
+          "1 Year (New) | 3–6 Months (Refurbished)"
+        ]
+      ],
+      "apps": "Commercial oil mills, industrial edible oil plants, groundnut oil factories, mustard/rapeseed processing, soybean oil plants, multi-seed processing units.",
+      "images": [
+        {
+          "src": "high-capacity-oil-expeller.webp",
+          "w": 546,
+          "h": 599,
+          "fit": "contain",
+          "alt": "Row of three high capacity oil expellers with yellow seed hoppers and green gear housings"
+        }
+      ],
+      "faq": [
+        "new-used",
+        "expeller-size",
+        "deliver"
+      ]
+    },
+    {
+      "slug": "screw-conveyor",
+      "name": "Screw Conveyor",
+      "stage": "convey",
+      "badge": "In stock",
+      "short": "Heavy-duty screw conveyors for seed, cake and bulk material. MS or SS, built to your plant layout.",
+      "keySpecs": [
+        "Ø 100–450 mm",
+        "0.5–50 TPH"
+      ],
+      "keyLabels": [
+        "Diameter",
+        "Throughput"
+      ],
+      "seoTitle": "Screw Conveyor for Oil Mills — MS & SS | Kadi, Gujarat",
+      "metaDesc": "Screw conveyors for oilseed, oil cake and meal: 100–450 mm diameter, up to 10 m, MS / SS 304 / SS 316, horizontal, inclined or vertical. Supplier in Kadi, Mahesana.",
+      "summary": "A screw conveyor moves seed, oil cake, meal and powders through a trough or tube with a rotating helical flight. We build them in MS, SS 304 and SS 316, 100–450 mm in diameter and up to 10 m long, for horizontal, inclined or vertical runs between oil mill machines.",
+      "desc": "Heavy-duty industrial screw conveyors for bulk material handling in oil mills and factories. Available in custom lengths and diameters. Mild steel and stainless steel options for food-grade and industrial applications.",
+      "features": [
+        "Custom length and diameter to fit your plant layout",
+        "Mild Steel (MS) and Stainless Steel (SS) options",
+        "Horizontal, inclined, and vertical configurations",
+        "Suitable for seeds, oil cake, meal, powder, granules",
+        "Heavy-duty bearings and shafting for long service life",
+        "Easy maintenance access with removable cover plates"
+      ],
+      "specs": [
+        [
+          "Diameter",
+          "4\" to 18\" (100mm to 450mm)"
+        ],
+        [
+          "Length",
+          "Up to 10 meters (custom available)"
+        ],
+        [
+          "Capacity",
+          "0.5 to 50 Tons/Hour (material dependent)"
+        ],
+        [
+          "Material",
+          "MS / SS 304 / SS 316"
+        ],
+        [
+          "Drive",
+          "Geared motor, direct mount or belt drive"
+        ],
+        [
+          "Configuration",
+          "Horizontal / Inclined / Vertical"
+        ]
+      ],
+      "apps": "Oilseed handling, oil cake/meal discharge from expeller, flour mills, rice bran handling, fertilizer plants, chemical industries, agro-processing units.",
+      "images": [
+        {
+          "src": "screw-conveyor.webp",
+          "w": 592,
+          "h": 357,
+          "fit": "contain",
+          "alt": "Tubular screw conveyor with inlet and discharge for oil mill material handling"
+        }
+      ],
+      "faq": [
+        "deliver",
+        "line"
+      ]
+    },
+    {
+      "slug": "conveyor-belt",
+      "name": "Conveyor Belt",
+      "stage": "convey",
+      "badge": "In stock",
+      "short": "Rubber and PVC conveyor belts for oil mills and agro-processing. All grades, widths and lengths.",
+      "keySpecs": [
+        "300–1800 mm",
+        "2–4 ply"
+      ],
+      "keyLabels": [
+        "Width",
+        "Construction"
+      ],
+      "seoTitle": "Conveyor Belt Supplier for Oil & Agro Mills | Kadi, Gujarat",
+      "metaDesc": "Rubber & PVC conveyor belts, 300–1800 mm wide, 6–20 mm thick, 2–4 ply. General, heat-resistant and oil-resistant grades with cut-to-length and splicing.",
+      "summary": "Industrial rubber and PVC conveyor belts for oil mills and agro-processing, supplied in 300–1800 mm widths, 6–20 mm thickness and 2- to 4-ply construction. General, heat-resistant and oil-resistant grades are available, with cut-to-length and splicing service.",
+      "desc": "Industrial-grade rubber and PVC conveyor belts for oil mills, factories, and agro-processing units. Multiple grades, widths, and lengths in stock. Cut-to-length and splicing service available.",
+      "features": [
+        "Heat-resistant and oil-resistant grades available",
+        "High tensile strength for heavy load handling",
+        "Multiple ply options: 2-ply, 3-ply, 4-ply",
+        "Rubber and PVC belt options",
+        "Available in all widths from 12\" (300mm) to 72\" (1800mm)",
+        "Cut-to-length and ready-splice service"
+      ],
+      "specs": [
+        [
+          "Width",
+          "300mm to 1800mm (12\" to 72\")"
+        ],
+        [
+          "Thickness",
+          "6mm to 20mm"
+        ],
+        [
+          "Tensile Strength",
+          "315 N/mm to 800 N/mm"
+        ],
+        [
+          "Belt Type",
+          "Rubber / PVC / Chevron / Rough Top"
+        ],
+        [
+          "Grade",
+          "General / Heat-Resistant / Oil-Resistant"
+        ],
+        [
+          "Ply Options",
+          "2-ply, 3-ply, 4-ply"
+        ]
+      ],
+      "apps": "Oil mills, flour mills, rice mills, stone crushers, cement plants, mining operations, agro-processing, seed handling lines.",
+      "images": [
+        {
+          "src": "conveyor-belt.webp",
+          "w": 800,
+          "h": 523,
+          "fit": "contain",
+          "alt": "Flat belt conveyor on a green steel frame with geared motor drive"
+        }
+      ],
+      "faq": [
+        "deliver",
+        "line"
+      ]
+    },
+    {
+      "slug": "casting-oil-filter",
+      "name": "Casting Oil Filter",
+      "stage": "filter",
+      "badge": "Fast dispatch",
+      "short": "Heavy-duty cast-iron filter press for oil clarification. Long-lasting, easy plate and cloth change.",
+      "keySpecs": [
+        "320–630 mm plates",
+        "10–60 plates"
+      ],
+      "keyLabels": [
+        "Plate size",
+        "Plate count"
+      ],
+      "seoTitle": "Casting Oil Filter Press (Cast Iron) | Kadi, Gujarat",
+      "metaDesc": "Cast-iron casting oil filter press for edible oil clarification: 320–630 mm plates, 10–60 plate stacks, manual or hydraulic. Removes solids and wax. Kadi, Gujarat.",
+      "summary": "A casting oil filter is a cast-iron filter press that clarifies crude pressed oil by forcing it through cloth-covered plates, removing suspended solids, wax and fine particles. We supply manual and hydraulic models with 320–630 mm plates and stacks of 10–60 plates for high-volume edible-oil mills.",
+      "desc": "Traditional heavy-duty cast iron filter press for edible oil clarification. Removes suspended impurities, waxes, and fine particles from crude pressed oil. Long-lasting construction designed for continuous high-volume oil processing.",
+      "features": [
+        "Heavy-duty cast iron frame and plates for maximum durability",
+        "Effective removal of impurities, wax, and fine particles",
+        "Suitable for all edible oils — groundnut, mustard, sesame, sunflower",
+        "Multiple plate sizes from 320mm to 630mm",
+        "Compatible with all major oil expeller brands",
+        "Easy plate change and filter cloth replacement"
+      ],
+      "specs": [
+        [
+          "Type",
+          "Manual / Hydraulic Casting Filter Press"
+        ],
+        [
+          "Plate Size",
+          "320mm, 400mm, 470mm, 630mm (standard)"
+        ],
+        [
+          "Plate Count",
+          "10 to 60 plates (as per capacity)"
+        ],
+        [
+          "Frame Material",
+          "Cast Iron"
+        ],
+        [
+          "Plate Material",
+          "Cast Iron / SS options"
+        ],
+        [
+          "Filtration",
+          "Removes particles down to 1–50 micron"
+        ]
+      ],
+      "apps": "Groundnut oil, mustard oil, sesame oil, sunflower oil, soybean oil — clarification, polishing, and de-waxing post-extraction.",
+      "images": [
+        {
+          "src": "casting-oil-filter-5.webp",
+          "w": 1200,
+          "h": 541,
+          "fit": "cover",
+          "alt": "Blue cast-iron casting oil filter press with plate stack and brass drain cocks"
+        },
+        {
+          "src": "casting-oil-filter-1.webp",
+          "w": 900,
+          "h": 1200,
+          "fit": "cover",
+          "alt": "Casting oil filter press with plate pack and hydraulic closing unit"
+        },
+        {
+          "src": "casting-oil-filter-2.webp",
+          "w": 900,
+          "h": 1200,
+          "fit": "cover",
+          "alt": "Open casting oil filter plates showing filter cloth seating"
+        },
+        {
+          "src": "casting-oil-filter-3.webp",
+          "w": 541,
+          "h": 1200,
+          "fit": "cover",
+          "alt": "Standing casting oil filter press painted blue with nameplate"
+        },
+        {
+          "src": "casting-oil-filter-4.webp",
+          "w": 900,
+          "h": 1200,
+          "fit": "cover",
+          "alt": "Casting oil filter press detail with 12 x 12 inch plates"
+        }
+      ],
+      "faq": [
+        "filters",
+        "deliver"
+      ]
+    },
+    {
+      "slug": "plastic-oil-filter-hydraulic",
+      "name": "Plastic Oil Filter (Hydraulic)",
+      "stage": "filter",
+      "badge": "New-plant choice",
+      "short": "Lightweight, fully hydraulic PP filter press. Corrosion-free plates, all sizes, strong value.",
+      "keySpecs": [
+        "PP plates",
+        "~50% lighter"
+      ],
+      "keyLabels": [
+        "Plates",
+        "Weight"
+      ],
+      "seoTitle": "Plastic (PP) Hydraulic Oil Filter Press | Kadi, Gujarat",
+      "metaDesc": "Hydraulic plastic oil filter press with food-grade polypropylene plates, 320–630 mm, about 50% lighter than cast iron. Best for new oil mill plants. Kadi, Gujarat.",
+      "summary": "A plastic (PP) hydraulic oil filter press uses food-grade polypropylene plates closed by a hydraulic cylinder instead of a manual screw. It is about 50% lighter than a cast-iron filter, corrosion-free, and the usual choice for new oil mill plants. Plate sizes run from 320 to 630 mm.",
+      "desc": "Lightweight, fully hydraulic plastic filter press for oil clarification. The best choice for new oil mill plants — lightweight construction, easy operation, and available in all sizes at a reasonable price. Ideal replacement for traditional heavy casting filters.",
+      "features": [
+        "Lightweight plastic frame — easy to install and move",
+        "Fully hydraulic pressing — no manual effort required",
+        "Available in all plate sizes to suit any mill capacity",
+        "Corrosion-free plastic plates — long service life",
+        "Easy cleaning and filter cloth replacement",
+        "Best value for new oil plant setup"
+      ],
+      "specs": [
+        [
+          "Type",
+          "Fully Hydraulic Plastic Filter Press"
+        ],
+        [
+          "Plate Size",
+          "320mm to 630mm (all sizes available on order)"
+        ],
+        [
+          "Plate Material",
+          "Food-grade Polypropylene (PP)"
+        ],
+        [
+          "Frame",
+          "MS frame with hydraulic cylinder"
+        ],
+        [
+          "Operation",
+          "Hydraulic — minimal manual effort"
+        ],
+        [
+          "Advantage",
+          "50% lighter than traditional casting filter"
+        ]
+      ],
+      "apps": "New oil mill plants, mid-scale edible oil units, mobile oil processing setups, entrepreneurs setting up first oil plant.",
+      "images": [
+        {
+          "src": "plastic-oil-filter-1.webp",
+          "w": 900,
+          "h": 1200,
+          "fit": "cover",
+          "alt": "Hydraulic plastic oil filter press with white PP plates on a blue frame"
+        },
+        {
+          "src": "plastic-oil-filter-2.webp",
+          "w": 1200,
+          "h": 900,
+          "fit": "cover",
+          "alt": "New PP hydraulic filter press 18 x 18 inch ready for dispatch"
+        },
+        {
+          "src": "plastic-oil-filter-3.webp",
+          "w": 900,
+          "h": 1200,
+          "fit": "cover",
+          "alt": "PP filter press plate stack with hydraulic power pack"
+        },
+        {
+          "src": "plastic-oil-filter-4.webp",
+          "w": 960,
+          "h": 720,
+          "fit": "cover",
+          "alt": "Close-up of white polypropylene filter plates with red and white drain cocks"
+        },
+        {
+          "src": "plastic-oil-filter-5.webp",
+          "w": 1200,
+          "h": 545,
+          "fit": "cover",
+          "alt": "Full-length plastic hydraulic oil filter press on the shop floor"
+        }
+      ],
+      "faq": [
+        "filters",
+        "deliver"
+      ]
+    },
+    {
+      "slug": "vassal-oil-neutralizer",
+      "name": "Vassal Oil Neutralizer",
+      "stage": "refine",
+      "badge": "Specialty",
+      "short": "Steam-jacketed vessel that neutralises free fatty acids in crude oil — the first step of refining.",
+      "keySpecs": [
+        "100–5000 L",
+        "SS 304"
+      ],
+      "keyLabels": [
+        "Batch size",
+        "Wetted parts"
+      ],
+      "seoTitle": "Vassal Oil Neutralizer for Edible Oil Refining | Gujarat",
+      "metaDesc": "Vassal oil neutralizer for alkali neutralisation of free fatty acids (FFA): 100–5000 L batch, SS 304 wetted parts, steam-jacketed or electric heating. Kadi, Gujarat.",
+      "summary": "A vassal oil neutralizer is a steam-jacketed vessel that removes free fatty acids (FFA) from crude edible oil by alkali (caustic soda) neutralisation — the first step of chemical refining, before bleaching and deodorisation. We supply batch units from 100 to 5,000 litres with SS 304 wetted parts.",
+      "desc": "Industrial Vassal Oil Neutralizer for edible oil refining. Neutralizes free fatty acids (FFA) in crude pressed oil using a caustic soda (NaOH) washing process, resulting in higher quality refined oil with improved shelf life and taste.",
+      "features": [
+        "Neutralizes free fatty acids (FFA) effectively",
+        "Improves oil quality, colour, and shelf life",
+        "Batch or continuous processing options",
+        "SS 304 wetted parts for food-grade compliance",
+        "Steam-jacketed vessel for temperature control",
+        "Works with all edible oils"
+      ],
+      "specs": [
+        [
+          "Process",
+          "Alkali (Caustic) Neutralization of FFA"
+        ],
+        [
+          "Material",
+          "SS 304 / MS with SS lining"
+        ],
+        [
+          "Capacity",
+          "100 Litres to 5000 Litres batch"
+        ],
+        [
+          "Heating",
+          "Steam-jacketed / Electric heating"
+        ],
+        [
+          "Output",
+          "Neutralized crude oil ready for bleaching/deodorization"
+        ],
+        [
+          "Application",
+          "Part of full oil refining line"
+        ]
+      ],
+      "apps": "Edible oil refining plants, groundnut/mustard/sunflower refining units, integrated oil extraction and refining operations, export-quality oil production.",
+      "images": [
+        {
+          "src": "vassal-oil-neutralizer.webp",
+          "w": 370,
+          "h": 338,
+          "fit": "contain",
+          "alt": "Cylindrical vassal oil neutralizer vessel with conical bottom"
+        }
+      ],
+      "faq": [
+        "vassal",
+        "deliver"
+      ]
+    },
+    {
+      "slug": "radler-chain",
+      "name": "Radler Chain",
+      "stage": "convey",
+      "badge": "In stock",
+      "short": "Redler-type drag chain for en-masse conveying of seed, cake and meal. Hardened alloy steel.",
+      "keySpecs": [
+        "1–30 TPH",
+        "Alloy steel"
+      ],
+      "keyLabels": [
+        "Throughput",
+        "Chain"
+      ],
+      "seoTitle": "Radler (Redler) Chain for Oil Mill Conveyors | Gujarat",
+      "metaDesc": "Radler / Redler en-masse chain conveyor: 1–30 TPH, hardened alloy-steel links, horizontal, inclined, vertical and Z-type. Dust-free seed and cake handling.",
+      "summary": "A Radler (Redler) chain is the drag chain inside an en-masse conveyor: it pulls oilseed, cake, meal or grain through an enclosed trough as a solid mass, with no breakage, dust or segregation. Our hardened alloy-steel chains handle 1–30 tonnes per hour in horizontal, inclined, vertical and Z-type layouts.",
+      "desc": "Industrial Radler (Redler) en-masse chain conveyor system for bulk material handling. Moves oilseeds, oil cake, flour, and granules through enclosed troughs without breakage, dusting, or segregation. Essential internal material handling in any oil mill.",
+      "features": [
+        "En-masse bulk material conveying — no dusting or segregation",
+        "Suitable for oilseeds, oil cake, flour, granules, and meal",
+        "Enclosed trough design — dust-free operation",
+        "Heavy-duty alloy steel chain links",
+        "Can convey horizontally, vertically, and at angles",
+        "Low maintenance — simple chain and sprocket design"
+      ],
+      "specs": [
+        [
+          "Type",
+          "Radler / Redler En-Masse Chain Conveyor"
+        ],
+        [
+          "Chain Material",
+          "Alloy Steel / Hardened Steel"
+        ],
+        [
+          "Capacity",
+          "1 to 30 Tons/Hour"
+        ],
+        [
+          "Directions",
+          "Horizontal / Inclined / Vertical / Z-type"
+        ],
+        [
+          "Trough",
+          "MS / SS enclosed trough with cover"
+        ],
+        [
+          "Drive",
+          "Geared motor, direct or belt drive"
+        ]
+      ],
+      "apps": "Oilseed feeding to expeller, oil cake and meal handling, flour mills, grain processing, bulk material internal conveying in factories and silos.",
+      "images": [
+        {
+          "src": "radler-chain.webp",
+          "w": 370,
+          "h": 306,
+          "fit": "cover",
+          "alt": "Forged alloy-steel Radler chain link with drag flight"
+        }
+      ],
+      "faq": [
+        "radler",
+        "deliver"
+      ]
+    },
+    {
+      "slug": "oil-expeller-spare-parts",
+      "name": "Oil Expeller Spare Parts",
+      "stage": "sustain",
+      "badge": "24–48 h dispatch",
+      "short": "Worm shafts, barrels, cages, bearings, gearbox parts and seals for all major Indian expellers.",
+      "keySpecs": [
+        "24–48 h",
+        "No MOQ"
+      ],
+      "keyLabels": [
+        "Dispatch",
+        "Minimum order"
+      ],
+      "seoTitle": "Oil Expeller Spare Parts — 24–48 h Dispatch | Kadi",
+      "metaDesc": "Oil expeller spare parts: worm shafts, barrels, cages, bearings, gearbox parts, seals and filter cloth for all major Indian brands. 24–48 h dispatch, no minimum order.",
+      "summary": "We stock oil expeller spare parts — worm shafts, pressing barrels, cages and liners, main shafts, bearings, gearbox parts, seals and filter cloths — compatible with all major Indian expeller brands. Stocked items are dispatched across India within 24–48 hours, with no minimum order and a 3–6 month warranty.",
+      "desc": "Complete range of genuine and compatible spare parts for all major oil expeller and oil mill machinery brands. We stock critical parts to ensure minimum mill downtime. Fast dispatch across India within 24–48 hours.",
+      "features": [
+        "Worm shafts and screw assemblies (all sizes)",
+        "Pressing barrels, cages, and liners",
+        "Main shaft, bearing housing, and taper bearings",
+        "Gearbox components, oil seals, and gaskets",
+        "Filter cloths and filter press components",
+        "Compatible with all major Indian expeller brands"
+      ],
+      "specs": [
+        [
+          "Compatibility",
+          "All major Indian oil expeller brands"
+        ],
+        [
+          "Part Types",
+          "Worm Shaft, Barrel, Cage, Bearing, Gearbox, Seals"
+        ],
+        [
+          "Material",
+          "Alloy Steel / Cast Iron / High-Grade MS"
+        ],
+        [
+          "Dispatch",
+          "24–48 Hours for stocked items"
+        ],
+        [
+          "Warranty",
+          "3–6 Months on all parts"
+        ],
+        [
+          "Order",
+          "No minimum order — single part available"
+        ]
+      ],
+      "apps": "Maintenance and breakdown repair for all oil expellers and oil mill machinery. Suitable for all mill sizes from mini expellers to large industrial plants.",
+      "images": [
+        {
+          "src": "oil-expeller-spare-parts.webp",
+          "w": 369,
+          "h": 384,
+          "fit": "contain",
+          "alt": "Oil expeller spare parts: worm shaft, gear, bearing housing and coupling"
+        }
+      ],
+      "faq": [
+        "spares",
+        "deliver"
+      ]
+    },
+    {
+      "slug": "oil-mill-machinery",
+      "name": "Oil Mill Machinery",
+      "stage": "sustain",
+      "badge": "Complete plant",
+      "short": "Complete oil mill machinery — seed cleaning to filtration and storage. New and used.",
+      "keySpecs": [
+        "2–100+ TPD",
+        "New & used"
+      ],
+      "keyLabels": [
+        "Plant size",
+        "Condition"
+      ],
+      "seoTitle": "Complete Oil Mill Machinery (2–100+ TPD) | Kadi, Gujarat",
+      "metaDesc": "Complete oil mill machinery for 2–100+ TPD plants: seed cleaning, expellers, filter presses, tanks, pumps and piping. New or inspected used, with installation.",
+      "summary": "Complete oil mill machinery covers every stage of an edible-oil plant: seed cleaning, conveying, expelling, filtration, storage tanks, pumps and piping. We supply individual machines or full 2–100+ TPD plant packages, new or inspected used, with installation and commissioning.",
+      "desc": "Complete oil mill machinery for all stages — from seed cleaning and pre-processing to oil extraction, filtration, and storage. Available as individual machines or complete plant packages. New and used machines both available.",
+      "features": [
+        "Seed cleaning and pre-processing equipment",
+        "Oil expeller and pressing section",
+        "Filter press and oil clarification",
+        "Storage tanks, pumps, and piping",
+        "New machinery from reputed manufacturers",
+        "Inspected used/refurbished machinery at lower cost"
+      ],
+      "specs": [
+        [
+          "Capacity",
+          "2 to 100+ Tons per Day"
+        ],
+        [
+          "Seed Types",
+          "All edible oilseeds — groundnut, mustard, sesame, sunflower, soy, coconut, castor"
+        ],
+        [
+          "Condition",
+          "New / Used / Refurbished"
+        ],
+        [
+          "Supply",
+          "Individual machines or complete plant"
+        ],
+        [
+          "Brands",
+          "All major Indian oil mill machinery manufacturers"
+        ],
+        [
+          "Service",
+          "Supply + Installation + Commissioning"
+        ]
+      ],
+      "apps": "New oil mill setup, plant modernization, factory expansion, export-quality edible oil production, co-operative oil processing societies.",
+      "images": [
+        {
+          "src": "oil-mill-machinery.webp",
+          "w": 800,
+          "h": 458,
+          "fit": "cover",
+          "alt": "Oil mill setup with a row of red oil expellers installed by National Machinery Stores"
+        }
+      ],
+      "faq": [
+        "new-used",
+        "install",
+        "deliver"
+      ]
+    },
+    {
+      "slug": "oil-mill-erection-service",
+      "name": "Oil Mill Erection & Service Contracts",
+      "stage": "sustain",
+      "badge": "Turnkey service",
+      "short": "Erection, re-erection, demolition and AMC — from foundation to a commissioned, running plant.",
+      "keySpecs": [
+        "2–10 weeks",
+        "PAN India"
+      ],
+      "keyLabels": [
+        "Timeline",
+        "Coverage"
+      ],
+      "seoTitle": "Oil Mill Erection, Demolition & AMC Service | Gujarat",
+      "metaDesc": "Oil mill erection, re-erection, relocation, demolition and Annual Maintenance Contracts (AMC). Civil guidance to commissioning and operator training, PAN India.",
+      "summary": "Our oil mill erection service takes a plant from foundation to commissioning: civil guidance, machine installation and alignment, commissioning and operator training — plus re-erection, relocation, demolition and Annual Maintenance Contracts (AMC). Projects run 2–10 weeks depending on plant size, anywhere in India.",
+      "desc": "Complete oil mill lifecycle service — from new plant installation and commissioning to re-erection, relocation, and demolition. Ideal for new entrepreneurs starting their first oil mill, or established mills needing expert maintenance and AMC support.",
+      "features": [
+        "New oil mill erection — from foundation to commissioned plant",
+        "Re-erection and relocation of existing oil mills",
+        "Demolition of old plants with safe equipment recovery",
+        "Civil guidance during construction phase",
+        "Machine installation, alignment, and commissioning",
+        "Operator training and annual maintenance contracts (AMC)"
+      ],
+      "specs": [
+        [
+          "Service Types",
+          "Erection / Re-erection / Demolition / AMC"
+        ],
+        [
+          "Scope",
+          "Civil guidance, machine install, commissioning, training"
+        ],
+        [
+          "Plant Scale",
+          "Mini (1–5 T/day) to Industrial (50+ T/day)"
+        ],
+        [
+          "Timeline",
+          "2–10 weeks depending on plant size"
+        ],
+        [
+          "AMC",
+          "Annual Maintenance Contract — scheduled service visits"
+        ],
+        [
+          "Coverage",
+          "PAN India — site visits available"
+        ]
+      ],
+      "apps": "New oil mill entrepreneurs, plant expansion projects, factory relocation, plant modernization, AMC for existing oil mills and agro-processing units.",
+      "images": [
+        {
+          "src": "oil-mill-machinery.webp",
+          "w": 800,
+          "h": 458,
+          "fit": "cover",
+          "alt": "Commissioned oil mill line with red expellers after erection by National Machinery Stores"
+        }
+      ],
+      "faq": [
+        "install",
+        "deliver"
+      ]
+    }
+  ],
+  "faq": {
+    "products": {
+      "q": "What products does National Machinery Stores supply?",
+      "a": "We supply Mini Oil Expellers, High Capacity Oil Expellers, Screw Conveyors, Conveyor Belts, Casting Oil Filters, Plastic Oil Filters (Hydraulic), Vassal Oil Neutralizers, Radler Chains, Oil Expeller Spare Parts and complete Oil Mill Machinery. We also provide Oil Mill Erection, Demolition & Total Service Contracts, including AMC."
+    },
+    "new-used": {
+      "q": "Do you supply both new and used oil expellers?",
+      "a": "Yes. We deal in both new and used (refurbished) oil expellers and oil mill machinery. We also work as commission agents: if you want to sell a used plant or machine, we connect you with buyers across India."
+    },
+    "expeller-size": {
+      "q": "Which oil expeller size do I need?",
+      "a": "Size the expeller by daily seed input. A mini oil expeller handles 1–5 tonnes per day on 3–15 HP. A high capacity oil expeller handles 5–50+ tonnes per day on 20–75 HP and is built for continuous 24-hour running. Send your seed type and target tonnes per day on WhatsApp and we will recommend a model."
+    },
+    "filters": {
+      "q": "What is the difference between a plastic (hydraulic) oil filter and a casting oil filter?",
+      "a": "The plastic oil filter uses lightweight polypropylene plates closed hydraulically; it is about 50% lighter, corrosion-free, reasonably priced and the best choice for new oil mill plants. The casting oil filter is heavy-duty cast iron and more durable for high-volume operations. We help you choose for your setup and budget."
+    },
+    "vassal": {
+      "q": "What is a Vassal Oil Neutralizer used for?",
+      "a": "A Vassal Oil Neutralizer is used in edible oil refining to neutralise free fatty acids (FFA) in crude oil with caustic soda, improving oil quality, colour and shelf life. It is the first step of the post-extraction refining stage, before bleaching and deodorisation."
+    },
+    "radler": {
+      "q": "What is a Radler Chain used for in an oil mill?",
+      "a": "A Radler (Redler) chain drives an en-masse conveyor that moves bulk material such as oilseeds, cake, flour and granules through an enclosed trough without breakage or segregation. In oil mills it feeds seed to expellers and carries cake and meal away."
+    },
+    "deliver": {
+      "q": "Do you deliver outside Gujarat?",
+      "a": "Yes. We supply clients in 18+ Indian states, including Rajasthan, Maharashtra, Madhya Pradesh, Uttar Pradesh, Punjab, Haryana, Karnataka, Andhra Pradesh and Odisha, and export to Africa and other international markets. Every order includes GST billing and transit-safe packaging."
+    },
+    "install": {
+      "q": "Can you handle complete oil plant installation?",
+      "a": "Yes. Our Oil Mill Erector, Demolition & Total Service Contract covers complete plant setup — civil guidance, machine installation, commissioning, operator training and ongoing Annual Maintenance Contracts (AMC). Typical projects take 2–10 weeks depending on plant size."
+    },
+    "spares": {
+      "q": "How quickly are spare parts dispatched?",
+      "a": "Stocked spare parts are dispatched within 24–48 hours. We keep critical parts — worm shafts, barrels, cages and bearings — in stock to minimise mill downtime. For urgent needs, send a photo of the part on WhatsApp for the fastest response."
+    },
+    "line": {
+      "q": "Can you supply a complete line, not just one machine?",
+      "a": "Yes. We supply every stage of an oil mill — conveying (screw conveyors, Radler chains, belts), pressing (expellers), filtration (casting and PP hydraulic filter presses) and refining (vassal neutralizers) — plus erection, AMC and spare parts, so one supplier is accountable for the whole line."
+    },
+    "where": {
+      "q": "Where is National Machinery Stores located?",
+      "a": "Our office is at 12, Someshwar Complex, Nandasan Highway Road, Kadi, Mahesana – 382715, Gujarat. Our factory and warehouse is on Kadi Nandasan Road, opposite Ultratech RMC Plant, Survey No. 91, Kundal (Kadi), Mehsana – 382715. We are open Monday to Saturday, 9 AM to 7 PM IST."
+    },
+    "language": {
+      "q": "Which languages does your sales team speak?",
+      "a": "Our sales team speaks Hindi, Gujarati and English. Call +91 94267 01635 or message us on WhatsApp at +91 88666 88626; we call back within 24–48 hours."
+    }
+  },
+  "homeFaq": [
+    "products",
+    "new-used",
+    "expeller-size",
+    "filters",
+    "vassal",
+    "radler",
+    "deliver",
+    "install",
+    "spares",
+    "where",
+    "language"
+  ]
+}
